@@ -10,9 +10,9 @@ email: "ztxtech@std.uestc.edu.cn"
 gscholar: bRYz250AAAAJ
 github: ztxtech
 twitter: ztxtechnology
-# wechat_qrcode: assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+wechat_qrcode: assets/images/etc/wechat.jpg
+wechat_prompt: >-
+  Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 # linkedin: your-linked-in-id
 orcid: 0000-0002-5188-0381
 
