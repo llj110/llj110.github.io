@@ -1,7 +1,7 @@
 ---
 title:          Residual Feature-Reutilization Inception Network
 date:           2024-03-20 00:00:00 +0800
-selected:       true
+selected:       false
 pub:            "Pattern Recognition"
 # pub_pre:        "Submitted to "
 # pub_post:       'Under review.'
