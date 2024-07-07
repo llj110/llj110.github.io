@@ -1,7 +1,7 @@
 ---
 title:          Learnable WSN Deployment of Evidential Collaborative Sensing Model
 date:           2024-03-23 00:10:00 +0800
-selected:       true
+selected:       false
 pub:            "Arxiv"
 pub_last:       ' <span class="badge badge-pill badge-info">Preprint</span>'
 pub_date:       "2024"
