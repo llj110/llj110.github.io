@@ -1,7 +1,7 @@
 ---
 title:          SIMULATED AIRCRAFT TRAJECTORY FOR THEORETICAL VELOCITY RANKING
 date:           2024-02-20 00:10:00 +0800
-selected:       true
+selected:       false
 pub:            "IEEE DataPort"
 pub_last:       ' <span class="badge badge-pill badge-info">Preprint</span>'
 pub_date:       "2024"
