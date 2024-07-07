@@ -1,7 +1,7 @@
 ---
 title:          Lorem ipsum dolor sit amet, consectetur adipiscing elit
 date:           2023-01-05 00:01:00 +0800
-selected:       true
+selected:       false
 pub:            "Nature Communications"
 pub_date:       "2023"
 abstract: >-
