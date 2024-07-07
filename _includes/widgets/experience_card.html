@@ -2,8 +2,8 @@
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-
                 <div class="row">
+                    
                     {% if site.data.profile.education %}
                     <div class="col-md-6">
                         <div class="mx-2 my-1">
@@ -57,12 +57,11 @@
                         </div>
                     </div>
                     {% endif %}
-                </div>
 
-                {% if site.data.profile.reviewer %}
+                    {% if site.data.profile.reviewer %}
                     <div class="col-md-6">
                         <div class="mx-2 my-1">
-                            <h6>Reviewer</h6>
+                            <h6>Experience</h6>
                             <ul class="list-unstyled mb-1">
                                 {% for item in site.data.profile.reviewer %}
                                 <li class="media mb-1">
@@ -76,8 +75,8 @@
                         </div>
                     </div>
                     {% endif %}
-                </div>
 
+                </div>
             </div>
         </div>
     </div>
