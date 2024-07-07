@@ -3,15 +3,15 @@ secondary_name: ""
 navbar_name: "Tianxiang Zhan"
 
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/uestc.jpg" alt="University of Electronic Science and Technology of China" class="inline-badge"/></span> M.S., University of Electronic Science and Technology of China (Now)'
-  - '<span class="no-break"><img src="assets/images/badges/swu.jpg" alt="Southwest University" class="inline-badge"/></span> B.S., Southwest University (2023)'
+  - '<span class="no-break"><img src="https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/badges/uestc.jpg" alt="University of Electronic Science and Technology of China" class="inline-badge"/></span> M.S., University of Electronic Science and Technology of China (Now)'
+  - '<span class="no-break"><img src="https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/badges/swu.jpg" alt="Southwest University" class="inline-badge"/></span> B.S., Southwest University (2023)'
 
 email: "ztxtech@std.uestc.edu.cn"
 gscholar: bRYz250AAAAJ
 researchgate: Tianxiang-Zhan
 github: ztxtech
 twitter: ztxtechnology
-wechat_qrcode: assets/images/etc/wechat.jpg
+wechat_qrcode: https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/etc/wechat.jpg
 wechat_prompt: >-
   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 # linkedin: your-linked-in-id
@@ -25,33 +25,33 @@ short_bio: >-
   I look forward to connecting with you and am excited about the prospect of collectively advancing the field of science.
 
 show_portrait: true
-portrait_url: assets/images/photos/ztx.jpg
+portrait_url: https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/photos/ztx.jpg
 portrait_caption: >-
   Shotted in 2023
 
 education:
 - name: University of Electronic Science and Technology of China
-  logo: assets/images/badges/uestc.jpg
+  logo: https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/badges/uestc.jpg
   position: M.S. in Computer Science
   date: Sep. 2023 - Now
 
 - name: Southwest University
-  logo: assets/images/badges/swu.jpg
+  logo: https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/badges/swu.jpg
   position: B.S. in Software Engineering
   date: Sep. 2019 - Jul. 2023
 
 experience:
 - name: Chongqing University
-  logo: assets/images/badges/cqu.jpg
+  logo: https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/badges/cqu.jpg
   position: Research Intern
   date: Sep. 2022 - Now
 
 reviewer:
 - name: Conference and Workshop on Neural Information Processing Systems 2024
-  logo: assets/images/badges/nips.svg
+  logo: https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/badges/nips.svg
 
 - name: IEEE Access
-  logo: assets/images/badges/access.jpg
+  logo: https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/badges/access.jpg
 
 # 2023，电子科技大学新生奖学金
 # 2022，西南大学三好学生
@@ -132,7 +132,7 @@ awards:
 
   - name: Third-Class Scholarship, Southwest University
     date: 2020
-    
+
   - name: Second Prize in the Chongqing Division, 12th National College Student Mathematics Competition
     date: 2020
 
