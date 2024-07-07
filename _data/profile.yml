@@ -3,12 +3,13 @@ secondary_name: ""
 navbar_name: "Tianxiang Zhan"
 
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/PKU_red.png" alt="Peking University" class="inline-badge"/></span> B.S., Peking University (2021)'
+  - '<span class="no-break"><img src="assets/images/badges/uestc.jpg" alt="University of Electronic Science and Technology of China" class="inline-badge"/></span> M.S., University of Electronic Science and Technology of China (Now)'
+  - '<span class="no-break"><img src="assets/images/badges/swu.jpg" alt="Southwest University" class="inline-badge"/></span> B.S., Southwest University (2023)'
 
 email: "ztxtech@std.uestc.edu.cn"
 gscholar: bRYz250AAAAJ
 github: ztxtech
-twitter: ztxtech
+twitter: ztxtechnology
 # wechat_qrcode: assets/images/etc/wechat.jpg
 # wechat_prompt: >-
 #   Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
@@ -16,33 +17,36 @@ twitter: ztxtech
 orcid: 0000-0002-5188-0381
 
 short_bio: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+  {Introduction}
 
 show_portrait: true
 portrait_url: assets/images/photos/ztx.jpg
 portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash.
+  Shotted in 2023
 
 education:
-- name: Peking University
-  logo: assets/images/badges/PKU_red.png
-  position: B.S. in Computer Science
-  date: Sep. 2017 - Jul. 2021
+- name: University of Electronic Science and Technology of China
+  logo: assets/images/badges/uestc.jpg
+  position: M.S. in Computer Science
+  date: Sep. 2023 - Now
 
-# experience:
-# - name: Peking University
-#   logo: assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+- name: Southwest University
+  logo: assets/images/badges/swu.jpg
+  position: B.S. in Software Engineering
+  date: Sep. 2019 - Jul. 2023
+
+experience:
+- name: Chongqing University
+  logo: assets/images/badges/cqu.png
+  position: Research Intern
+  date: Sep. 2022 - Now
 
 
-awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
+# awards:
+# - name: Award Name 2
+#   date: 2024
+# - name: Award Name 1 
+#   date: 2021
 
 # Feel free to replace the footer text if you would like to, but I will greatly appreciate it 
 # if you keep the link to the template so that more people can benefit from it. Thanks!
