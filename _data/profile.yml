@@ -43,7 +43,10 @@ experience:
 
 reviewer:
 - name: Conference and Workshop on Neural Information Processing Systems 2024
+  logo: assets/images/badges/nips.svg
+
 - name: IEEE Access
+  logo: assets/images/badges/access.jpg
 
 
 
