@@ -3,8 +3,6 @@ title:          Generalized Uncertainty-Based Evidential Fusion with Hybrid Mult
 date:           2024-04-14 00:10:00 +0800
 selected:       false
 pub:            "ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
-# pub_pre:        "Submitted to "
-# pub_post:       'Under review.'
 pub_last:       ' <span class="badge badge-pill badge-custom badge-warning">CCF B</span>'
 pub_date:       "2024"
 

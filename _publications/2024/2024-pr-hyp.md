@@ -3,8 +3,6 @@ title:          Residual Feature-Reutilization Inception Network
 date:           2024-03-20 00:10:00 +0800
 selected:       false
 pub:            "Pattern Recognition"
-# pub_pre:        "Submitted to "
-# pub_post:       'Under review.'
 pub_last:       ' <span class="badge badge-pill badge-custom badge-warning">CCF B</span>'
 pub_date:       "2024"
 
