@@ -59,3 +59,10 @@ img.lazy {
     font-family: Courier, monospace;
 }
 
+.custom-bg {
+    background: #f8f9fa; /* 这是bg-light的默认背景色 */
+    background: url('https://cdn.jsdelivr.net/gh/ztxtech/ztxtech.github.io/assets/images/bg/uestc.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
