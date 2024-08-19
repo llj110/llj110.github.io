@@ -1,28 +1,24 @@
-primary_name: "Tianxiang Zhan"
+primary_name: "Lijian Li"
 secondary_name: ""
-navbar_name: "Tianxiang Zhan"
+navbar_name: "Lijian Li"
 
 positions:
   - '<span class="no-break"><img src="assets/images/badges/uestc.jpg" alt="University of Electronic Science and Technology of China" class="inline-badge"/></span> M.S., University of Electronic Science and Technology of China (Now)'
   - '<span class="no-break"><img src="assets/images/badges/swu.jpg" alt="Southwest University" class="inline-badge"/></span> B.S., Southwest University (2023)'
 
-email: "ztxtech@std.uestc.edu.cn"
-gscholar: bRYz250AAAAJ
-researchgate: Tianxiang-Zhan
-github: ztxtech
-twitter: ztxtechnology
-wechat_qrcode: assets/images/etc/wechat.jpg
-wechat_prompt: >-
-  Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
+email: "mc35305@umac.mo"
+gscholar: Pe_tlDMAAAAJ
+researchgate: Lijian-Li-2
+github: llj110
+# twitter: ztxtechnology
+# wechat_qrcode: assets/images/etc/wechat.jpg
+# wechat_prompt: >-
+#  Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
 # linkedin: your-linked-in-id
-orcid: 0000-0002-5188-0381
+orcid: 0009-0006-2009-3269
 
 short_bio: >-
-  <p>Greetings, I am currently pursuing a Master's degree at the University of Electronic Science and Technology of China, with an anticipated graduation date of June 2026. My research focuses on the fields of <b>time series analysis, statistical physics, information theory, and evidence theory</b>. I am deeply passionate about exploring the intersections within these disciplines and addressing the complex challenges they present.</p>
-
-  <p><b>I am actively seeking a fully-funded Ph.D. position in <i>Computer Science</i></b>, where I hope to join a vibrant research community and collaborate with like-minded scholars in pushing the boundaries of scientific knowledge. If my research interests align with yours, or if you see potential for a research collaboration, please feel free to reach out to me via email or WeChat (please indicate the purpose of your contact when messaging).</p>
-
-  <p>I look forward to connecting with you and am excited about the prospect of collectively advancing the field of science.</p>
+  I am currently a Master student at the Faculty of Science and Technology, University of Macau, under the supervision of Prof. Chi-Man Pun. Previously, I earned my B.S. degree in Software Engineering from Southwest University. My research interests cover Multi-modal Learning, AI-Generated Content, Trustworthy Machine Learning, and Semi-supervised Learning.
 
 show_portrait: true
 portrait_url: assets/images/photos/ztx.jpg
@@ -30,9 +26,9 @@ portrait_caption: >-
   Shotted in 2023
 
 education:
-- name: University of Electronic Science and Technology of China
+- name: University of Macau
   logo: assets/images/badges/uestc.jpg
-  position: M.S. in Computer Science
+  position: M.S. in Faculty of Computer and Technology
   date: Sep. 2023 - Now
 
 - name: Southwest University
@@ -41,17 +37,15 @@ education:
   date: Sep. 2019 - Jul. 2023
 
 experience:
-- name: Chongqing University
+- name: Guangming Laboratory
   logo: assets/images/badges/cqu.jpg
   position: Research Intern
-  date: Sep. 2022 - Now
+  date: Aug. 2024 - Now
 
 reviewer:
-- name: Conference and Workshop on Neural Information Processing Systems 2024
-  logo: assets/images/badges/nips.svg
+- name: IEEE Transactions on Neural Networks and Learning Systems
+  # logo: assets/images/badges/nips.svg
 
-- name: IEEE Access
-  logo: assets/images/badges/access.jpg
 
 # 2023，电子科技大学新生奖学金
 # 2022，西南大学三好学生
@@ -87,54 +81,54 @@ reviewer:
 # 2020, Third-Class Scholarship, Southwest University
 # 2020, Second Prize in the Chongqing Division, 12th National College Student Mathematics Competition
 
-awards:
-  - name: Freshman Scholarship, University of Electronic Science and Technology of China
-    date: 2023
+# awards:
+#   - name: Freshman Scholarship, University of Electronic Science and Technology of China
+#     date: 2023
 
-  - name: Southwest University's Outstanding Student
-    date: 2022
+#   - name: Southwest University's Outstanding Student
+#     date: 2022
 
-  - name: First-Class Scholarship, Southwest University
-    date: 2022
+#   - name: First-Class Scholarship, Southwest University
+#     date: 2022
 
-  - name: Striving and Struggling Award, Southwest University
-    date: 2022
+#   - name: Striving and Struggling Award, Southwest University
+#     date: 2022
 
-  - name: Second Prize at the Provincial Level, China College Student Computer Design Competition
-    date: 2022
+#   - name: Second Prize at the Provincial Level, China College Student Computer Design Competition
+#     date: 2022
 
-  - name: Third Prize at the Provincial Level, China College Computer Competition
-    date: 2022
+#   - name: Third Prize at the Provincial Level, China College Computer Competition
+#     date: 2022
 
-  - name: Third Prize at the Provincial Level, Chongqing Higher Education Institutions Database Application Design Competition
-    date: 2022
+#   - name: Third Prize at the Provincial Level, Chongqing Higher Education Institutions Database Application Design Competition
+#     date: 2022
 
-  - name: Southwest University's Outstanding Student
-    date: 2021
+#   - name: Southwest University's Outstanding Student
+#     date: 2021
 
-  - name: First-Class Scholarship, Southwest University
-    date: 2021
+#   - name: First-Class Scholarship, Southwest University
+#     date: 2021
 
-  - name: Volunteer Service Award, Southwest University
-    date: 2021
+#   - name: Volunteer Service Award, Southwest University
+#     date: 2021
 
-  - name: Innovation and Entrepreneurship Award, Southwest University
-    date: 2021
+#   - name: Innovation and Entrepreneurship Award, Southwest University
+#     date: 2021
 
-  - name: Honorable Mention (Second Prize), American College Student Mathematics Modeling Competition
-    date: 2021
+#   - name: Honorable Mention (Second Prize), American College Student Mathematics Modeling Competition
+#     date: 2021
 
-  - name: Second Prize at the Provincial Level, "Higher Education Cup" National College Student Mathematics Modeling Competition
-    date: 2021
+#   - name: Second Prize at the Provincial Level, "Higher Education Cup" National College Student Mathematics Modeling Competition
+#     date: 2021
 
-  - name: Southwest University's Outstanding Student
-    date: 2020
+#   - name: Southwest University's Outstanding Student
+#     date: 2020
 
-  - name: Third-Class Scholarship, Southwest University
-    date: 2020
+#   - name: Third-Class Scholarship, Southwest University
+#     date: 2020
 
-  - name: Second Prize in the Chongqing Division, 12th National College Student Mathematics Competition
-    date: 2020
+#   - name: Second Prize in the Chongqing Division, 12th National College Student Mathematics Competition
+#     date: 2020
 
 
 # Feel free to replace the footer text if you would like to, but I will greatly appreciate it 
