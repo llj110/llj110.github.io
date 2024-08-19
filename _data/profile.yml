@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Lijian Li"
 
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/macao.jpg" alt="University of Macau" class="inline-badge"/></span> M.S., University of Macau (Now)'
+  - '<span class="no-break"><img src="assets/images/badges/macao.png" alt="University of Macau" class="inline-badge"/></span> M.S., University of Macau (Now)'
   - '<span class="no-break"><img src="assets/images/badges/swu.jpg" alt="Southwest University" class="inline-badge"/></span> B.S., Southwest University (2023)'
 
 email: "mc35305@umac.mo"
