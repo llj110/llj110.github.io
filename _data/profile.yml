@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Lijian Li"
 
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/uestc.jpg" alt="University of Electronic Science and Technology of China" class="inline-badge"/></span> M.S., University of Electronic Science and Technology of China (Now)'
+  - '<span class="no-break"><img src="assets/images/badges/uestc.jpg" alt="University of Electronic Science and Technology of China" class="inline-badge"/></span> M.S., University of Macau (Now)'
   - '<span class="no-break"><img src="assets/images/badges/swu.jpg" alt="Southwest University" class="inline-badge"/></span> B.S., Southwest University (2023)'
 
 email: "mc35305@umac.mo"
@@ -44,7 +44,6 @@ experience:
 
 reviewer:
 - name: IEEE Transactions on Neural Networks and Learning Systems
-  # logo: assets/images/badges/nips.svg
 
 
 # 2023，电子科技大学新生奖学金
