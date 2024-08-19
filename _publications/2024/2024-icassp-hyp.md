@@ -1,7 +1,7 @@
 ---
 title:          Generalized Uncertainty-Based Evidential Fusion with Hybrid Multi-Head Attention for Weak-Supervised Temporal Action Localization
 date:           2024-04-14 00:10:00 +0800
-selected:       false
+selected:       true
 pub:            "ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
 pub_last:       ' <span class="badge badge-pill badge-custom badge-warning">CCF B</span>'
 pub_date:       "2024"
