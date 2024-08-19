@@ -1,6 +1,6 @@
 ---
 title:          NNDF A new neural detection network for aspect-category sentiment analysis       
-date:           2021-04-13 00:10:00 +0800
+date:           2022-04-13 00:10:00 +0800
 selected:       true
 pub:            "International Conference on Knowledge Science, Engineering and Management (KSEM)"
 pub_last:       ' <span class="badge badge-pill badge-info">International Conference on Knowledge Science, Engineering and Management (KSEM)</span>'
