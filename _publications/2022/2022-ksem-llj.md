@@ -1,5 +1,5 @@
 ---
-title:          NNDF: A new neural detection network for aspect-category sentiment analysis
+title:          NNDF A new neural detection network for aspect-category sentiment analysis       
 date:           2021-04-13 00:10:00 +0800
 selected:       true
 pub:            "International Conference on Knowledge Science, Engineering and Management (KSEM)"
@@ -13,6 +13,8 @@ authors:
   - Lijian Li
   - Yuanpeng He
   - Li Li
+
 links:
   PDF: https://link.springer.com/chapter/10.1007/978-3-031-10989-8_27
 ---
+
