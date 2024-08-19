@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Lijian Li"
 
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/macao.png" alt="University of Electronic Science and Technology of China" class="inline-badge"/></span> M.S., University of Macau (Now)'
+  - '<span class="no-break"><img src="assets/images/badges/macao.jpg" alt="University of Macau" class="inline-badge"/></span> M.S., University of Macau (Now)'
   - '<span class="no-break"><img src="assets/images/badges/swu.jpg" alt="Southwest University" class="inline-badge"/></span> B.S., Southwest University (2023)'
 
 email: "mc35305@umac.mo"
@@ -42,8 +42,8 @@ experience:
   position: Research Intern
   date: Aug. 2024 - Now
 
-# reviewer:
-# - name: IEEE Transactions on Neural Networks and Learning Systems
+reviewer:
+- name: IEEE Transactions on Neural Networks and Learning Systems
 
 
 # 2023，电子科技大学新生奖学金
@@ -132,5 +132,5 @@ experience:
 
 # Feel free to replace the footer text if you would like to, but I will greatly appreciate it 
 # if you keep the link to the template so that more people can benefit from it. Thanks!
-footer_text: >-
-  <a href="https://github.com/ztxtech" target="_blank"><i class="fas fa-pencil-ruler"></i> ztxtech's Github</a>
+# footer_text: >-
+#   <a href="https://github.com/ztxtech" target="_blank"><i class="fas fa-pencil-ruler"></i> ztxtech's Github</a>
