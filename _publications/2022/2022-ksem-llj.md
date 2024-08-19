@@ -3,7 +3,7 @@ title:          NNDF A new neural detection network for aspect-category sentimen
 date:           2022-04-13 00:10:00 +0800
 selected:       true
 pub:            "International Conference on Knowledge Science, Engineering and Management (KSEM)"
-pub_last:       ' <span class="badge badge-pill badge-info">International Conference on Knowledge Science, Engineering and Management (KSEM)</span>'
+pub_last:       ' <span class="badge badge-pill badge-info">CCF C</span>'
 pub_date:       "2022"
 
 abstract: >-
