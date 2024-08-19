@@ -3,7 +3,7 @@ secondary_name: ""
 navbar_name: "Lijian Li"
 
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/uestc.jpg" alt="University of Electronic Science and Technology of China" class="inline-badge"/></span> M.S., University of Macau (Now)'
+  - '<span class="no-break"><img src="assets/images/badges/macao.png" alt="University of Electronic Science and Technology of China" class="inline-badge"/></span> M.S., University of Macau (Now)'
   - '<span class="no-break"><img src="assets/images/badges/swu.jpg" alt="Southwest University" class="inline-badge"/></span> B.S., Southwest University (2023)'
 
 email: "mc35305@umac.mo"
@@ -21,13 +21,13 @@ short_bio: >-
   I am currently a Master student at the Faculty of Science and Technology, University of Macau, under the supervision of Prof. Chi-Man Pun. Previously, I earned my B.S. degree in Software Engineering from Southwest University. My research interests cover Multi-modal Learning, AI-Generated Content, Trustworthy Machine Learning, and Semi-supervised Learning.
 
 show_portrait: true
-portrait_url: assets/images/photos/ztx.jpg
+portrait_url: assets/images/photos/llj.jpg
 portrait_caption: >-
   Shotted in 2023
 
 education:
 - name: University of Macau
-  logo: assets/images/badges/uestc.jpg
+  logo: assets/images/badges/macao.png
   position: M.S. in Faculty of Computer and Technology
   date: Sep. 2023 - Now
 
@@ -38,12 +38,12 @@ education:
 
 experience:
 - name: Guangming Laboratory
-  logo: assets/images/badges/cqu.jpg
+  logo: assets/images/badges/gm.jpg
   position: Research Intern
   date: Aug. 2024 - Now
 
-reviewer:
-- name: IEEE Transactions on Neural Networks and Learning Systems
+# reviewer:
+# - name: IEEE Transactions on Neural Networks and Learning Systems
 
 
 # 2023，电子科技大学新生奖学金
