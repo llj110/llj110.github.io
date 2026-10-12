@@ -3,7 +3,6 @@
   <div class="publication-visual">
     {% if paper.cover and paper.cover != '' %}<img src="{{ paper.cover | relative_url }}" alt="{{ paper.title | escape }} — overview figure" loading="lazy" width="520" height="330">
     {% else %}<div class="publication-placeholder" aria-hidden="true"><span>{{ paper.venue_short | default: paper.pub }}</span><span>{{ paper.pub_date }}</span></div>{% endif %}
-    <span class="venue-badge">{{ paper.venue_short | default: paper.pub }} {{ paper.pub_date }}</span>
   </div>
   <div class="publication-body">
     <div class="publication-meta"><span class="publication-short">{{ paper.venue_short | default: paper.pub }} {{ paper.pub_date }}</span>{% include rank.html venue=paper.venue_short %}{% if paper.status %}<span class="paper-status">{{ paper.status }}</span>{% endif %}</div>
