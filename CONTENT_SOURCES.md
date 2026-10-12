@@ -44,3 +44,5 @@ The revised design uses a white background, charcoal text, restrained periwinkle
 ## Research introduction
 
 The research description is grounded in the listed papers: multimodal representation learning and knowledge graph completion (PR 2026), uncertainty modeling and semi-supervised medical segmentation (KDD / PR / BIBM), test-time retrieval adaptation (TPAMI / TKDE 2026), and online 3D reconstruction (BAT3R, NeurIPS 2026). Both language versions and research tags reflect these topics. Generative AI is not presented as a primary focus based solely on a coauthored confidential LLM inference paper.
+
+The EPCL-JUDA code link is verified against the owner's [public implementation repository](https://github.com/llj110/EPCL_JUDA), whose README names the paper and identifies Lijian Li, Yuanpeng He, and Chi-Man Pun. The stale code-release statement is updated accordingly.

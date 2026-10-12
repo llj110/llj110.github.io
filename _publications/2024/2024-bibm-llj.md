@@ -17,7 +17,7 @@ abstract: 'Recently, prototype learning has emerged in semi-supervised medical i
   learning. Notably, a prototype network is proposed to reduce high memory requirements brought by the introduction
   of augmented data. Extensive experiments on Left Atrium, Pancreas-NIH, Type B Aortic Dissection datasets demonstrate
   EPCL-JUDA''s superiority over previous state-of-the-art approaches, confirming the effectiveness of our framework.
-  The code will be released soon. '
+  The code is publicly available. '
 cover: assets/images/covers/2024-bibm-llj.png
 authors:
 - Lijian Li
@@ -25,6 +25,7 @@ authors:
 - Chi-Man Pun
 links:
   Paper: https://doi.org/10.1109/BIBM62325.2024.10821789
+  Code: https://github.com/llj110/EPCL_JUDA
 venue_short: BIBM
 summary: Joint uncertainty estimation and data augmentation improve prototype consistency for semi-supervised medical
   image segmentation.
