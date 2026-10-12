@@ -40,3 +40,7 @@ The owner directly confirmed reviewer service for PR, TNNLS, and KDD. Years and 
 ## Layout
 
 The revised design uses a white background, charcoal text, restrained periwinkle accents, sans-serif headings, News and reviewer panels, and illustrated publication rows. Duplicate full-width venue ribbons under paper figures have been removed; venue and CCF labels appear beside publication titles. The requested reference is [Yuanpeng He's homepage](https://www.hyppyh.top/); academic layout inspiration was also reviewed in [Minimal Light](https://github.com/yaoyao-liu/minimal-light) and [Academic Homepage Templates](https://github.com/Galaxy-Dawn/academic-homepage-templates). No template source code was copied from these repositories.
+
+## Research introduction
+
+The research description is grounded in the listed papers: multimodal representation learning and knowledge graph completion (PR 2026), uncertainty modeling and semi-supervised medical segmentation (KDD / PR / BIBM), test-time retrieval adaptation (TPAMI / TKDE 2026), and online 3D reconstruction (BAT3R, NeurIPS 2026). Both language versions and research tags reflect these topics. Generative AI is not presented as a primary focus based solely on a coauthored confidential LLM inference paper.
