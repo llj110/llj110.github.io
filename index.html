@@ -1,16 +1,47 @@
 ---
 layout: default
-title : Homepage
+title: Home
 navbar_name: Home
-num_selected: 10
 ---
-{% include widgets/profile_card.html %}
-
-{% include widgets/experience_card.html %}
-
-{% assign pubs = site.publications | sort: "date" | reverse | where: "selected", true %}
-{% 
-    include widgets/publication_card.html 
-    publications=pubs limit=page.num_selected 
-    title='<i class="fas fa-star"></i> Selected Publications'
-%}
+<section class="hero" id="about" aria-labelledby="about-title">
+  <div class="hero-copy">
+  <p class="eyebrow"><span data-lang="en">MULTIMODAL LEARNING · TRUSTWORTHY AI</span><span data-lang="zh" lang="zh-CN">多模态学习 · 可信智能</span></p>
+  <h1 class="hero-name">Lijian Li<span aria-hidden="true">.</span></h1>
+  <p class="hero-role"><span class="role-dot" aria-hidden="true"></span><span data-lang="en">Ph.D. student · University of Macau</span><span data-lang="zh" lang="zh-CN">博士研究生 · 澳门大学</span></p>
+  <h2 id="about-title" class="sr-only"><span data-lang="en">About me</span><span data-lang="zh" lang="zh-CN">关于我</span></h2>
+  <div class="about-copy" data-lang="en">
+    <p>I am a <strong>Ph.D. student</strong> at the <a href="https://www.fst.um.edu.mo/" target="_blank" rel="noopener noreferrer">Faculty of Science and Technology, University of Macau</a>, supervised by <a href="https://cmpun.github.io/" target="_blank" rel="noopener noreferrer">Prof. Chi-Man Pun</a>. I received my B.S. in Software Engineering from Southwest University in 2023.</p>
+    <p>My research focuses on <strong>multimodal learning, generative AI, trustworthy machine learning, and semi-supervised learning</strong>. My work explores how to learn from complementary information and uncertainty, with applications in medical image segmentation, knowledge graph completion, and robust visual understanding.</p>
+  </div>
+  <div class="about-copy" data-lang="zh" lang="zh-CN">
+    <p>我目前在<strong>澳门大学科技学院攻读博士学位</strong>，导师为 <a href="https://cmpun.github.io/" target="_blank" rel="noopener noreferrer">Chi-Man Pun 教授</a>。2023 年，我于西南大学获得软件工程学士学位。</p>
+    <p>我的研究兴趣包括<strong>多模态学习、生成式人工智能、可信机器学习与半监督学习</strong>。我的工作关注如何利用互补信息和不确定性提升学习效果，应用涵盖医学图像分割、知识图谱补全与鲁棒视觉理解。</p>
+  </div>
+  <ul class="research-tags" aria-label="Research interests">
+    <li>Multimodal Learning</li><li>Generative AI</li><li>Trustworthy ML</li><li>Semi-supervised Learning</li>
+  </ul>
+  <div class="hero-social"><a href="https://scholar.google.com/citations?user=Pe_tlDMAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://dblp.org/pid/88/1835-3" target="_blank" rel="noopener noreferrer">DBLP <span aria-hidden="true">↗</span></a><a href="https://github.com/llj110" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://orcid.org/0009-0006-2009-3269" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a></div>
+  </div>
+  {% include profile.html %}
+</section>
+<div class="updates-grid">
+<section class="section news-section" id="news" aria-labelledby="news-title">
+  <div class="section-heading"><div><p class="section-kicker">01 / UPDATES</p><h2 id="news-title"><span data-lang="en">News</span><span data-lang="zh" lang="zh-CN">最新动态</span></h2></div><span class="section-caption"><span data-lang="en">Research updates</span><span data-lang="zh" lang="zh-CN">论文录用与发表</span></span></div>
+  <ul class="news-list">{% for item in site.data.news limit:5 %}{% include news_item.html item=item %}{% endfor %}</ul>
+  {% if site.data.news.size > 5 %}<details class="news-archive"><summary><span data-lang="en">Earlier updates</span><span data-lang="zh" lang="zh-CN">更多动态</span></summary><ul class="news-list">{% for item in site.data.news offset:5 %}{% include news_item.html item=item %}{% endfor %}</ul></details>{% endif %}
+</section>
+{% include service.html %}
+</div>
+<section class="section" id="publications" aria-labelledby="publications-title">
+  <div class="section-heading"><div><p class="section-kicker">03 / RESEARCH</p><h2 id="publications-title"><span data-lang="en">Selected publications</span><span data-lang="zh" lang="zh-CN">代表性论文</span></h2></div><a class="text-link" href="{{ '/publications.html' | relative_url }}"><span data-lang="en">All publications</span><span data-lang="zh" lang="zh-CN">全部论文</span> <span aria-hidden="true">→</span></a></div>
+  {% assign pubs = site.publications | where: 'selected', true | sort: 'date' | reverse %}
+  <div class="publication-list">{% for item in pubs %}{% include widgets/publication_item.html item=item %}{% endfor %}</div>
+</section>
+<section class="section" id="education" aria-labelledby="education-title">
+  <div class="section-heading"><div><p class="section-kicker">04 / BACKGROUND</p><h2 id="education-title"><span data-lang="en">Education & experience</span><span data-lang="zh" lang="zh-CN">教育与经历</span></h2></div></div>
+  <div class="experience-list">
+    <article class="experience-item"><img src="{{ '/assets/images/badges/macao.png' | relative_url }}" alt="" width="48" height="48" loading="lazy"><div><h3><span data-lang="en">University of Macau</span><span data-lang="zh" lang="zh-CN">澳门大学</span></h3><p><span data-lang="en">Ph.D. student · Faculty of Science and Technology</span><span data-lang="zh" lang="zh-CN">博士研究生 · 科技学院</span></p><p class="muted"><span data-lang="en">Advisor: Prof. Chi-Man Pun</span><span data-lang="zh" lang="zh-CN">导师：Chi-Man Pun 教授</span></p></div><span class="experience-date"><span data-lang="en">Present</span><span data-lang="zh" lang="zh-CN">在读</span></span></article>
+    <article class="experience-item"><img src="{{ '/assets/images/badges/swu.jpg' | relative_url }}" alt="" width="48" height="48" loading="lazy"><div><h3><span data-lang="en">Southwest University</span><span data-lang="zh" lang="zh-CN">西南大学</span></h3><p><span data-lang="en">B.S. · Software Engineering</span><span data-lang="zh" lang="zh-CN">学士 · 软件工程</span></p></div><span class="experience-date">2019 – 2023</span></article>
+    <article class="experience-item"><img src="{{ '/assets/images/badges/gm.jpg' | relative_url }}" alt="" width="48" height="48" loading="lazy"><div><h3><span data-lang="en">Guangming Laboratory</span><span data-lang="zh" lang="zh-CN">光明实验室</span></h3><p><span data-lang="en">Research Intern</span><span data-lang="zh" lang="zh-CN">科研实习</span></p></div><span class="experience-date">2024 – <span data-lang="en">Present</span><span data-lang="zh" lang="zh-CN">至今</span></span></article>
+  </div>
+</section>

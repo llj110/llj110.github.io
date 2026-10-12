@@ -1,0 +1,2 @@
+{% assign news = include.item %}
+<li class="news-item"><span class="news-date">{{ news.display_date }}</span><div><div class="news-meta"><span class="news-venue">{{ news.venue }}</span>{% assign short_venue = news.venue | split: ' ' | first %}{% include rank.html venue=short_venue %}</div><p><span data-lang="en">{{ news.text_en }}</span><span data-lang="zh" lang="zh-CN">{{ news.text_zh }}</span> <a href="{{ news.link }}" target="_blank" rel="noopener noreferrer">{{ news.title | escape }}</a>.</p></div></li>

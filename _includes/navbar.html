@@ -1,20 +1,13 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top mb-5 shadow-sm">
-    <div class="container">
-        <a class="navbar-brand"><strong>{{site.data.profile.navbar_name}}</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                {% for item in site.data.navigation.pages %}
-                <li class="nav-item {% if item.name == page.navbar_name %}active{% endif %}">
-                    <a class="nav-link" href="{{ item.url }}">{{ item.name }}
-                        {% if item.url == page.url %}<span class="sr-only">(current)</span>{% endif %}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
+<header class="site-header">
+  <nav class="header-inner" aria-label="Main navigation">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark" aria-hidden="true">LL</span>{{ site.data.profile.primary_name }}</a>
+    <div class="nav-links">
+      <a href="{{ '/' | relative_url }}#about"><span data-lang="en">About</span><span data-lang="zh" lang="zh-CN">关于我</span></a>
+      <a href="{{ '/' | relative_url }}#news"><span data-lang="en">News</span><span data-lang="zh" lang="zh-CN">动态</span></a>
+      <a href="{{ '/' | relative_url }}#service"><span data-lang="en">Service</span><span data-lang="zh" lang="zh-CN">审稿</span></a>
+      <a href="{{ '/publications.html' | relative_url }}" {% if page.navbar_name == 'Publications' %}aria-current="page"{% endif %}><span data-lang="en">Publications</span><span data-lang="zh" lang="zh-CN">论文</span></a>
+      <a href="{{ '/' | relative_url }}#education"><span data-lang="en">Education</span><span data-lang="zh" lang="zh-CN">教育经历</span></a>
+      <button class="language-toggle" type="button" aria-label="Switch to Chinese" hidden>中文</button>
     </div>
-</nav>
+  </nav>
+</header>

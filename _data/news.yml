@@ -1,0 +1,71 @@
+# Dates are acceptance dates only when verified; year-only entries do not imply a month.
+- display_date: '2026'
+  venue: TPAMI 2026
+  title: Dual Uncertainty-Aware Guidance for Test-Time Visual Retrieval Under Distributional Variations
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://doi.org/10.1109/TPAMI.2026.3741282
+- display_date: 2026.09.24
+  venue: NeurIPS 2026
+  title: 'BAT3R: Robust Online 3D Reconstruction with Bayesian Adaptive State Updates'
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://neurips.cc/virtual/2026/poster/153286
+- display_date: '2026'
+  venue: PR 2026
+  title: Complementarity-driven Representation Learning for Multi-modal Knowledge Graph Completion
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://doi.org/10.1016/j.patcog.2026.113327
+- display_date: '2026'
+  venue: ACL 2026
+  title: 'Your Inference Request Will Become a Black Box: Confidential Inference for Cloud-based Large Language
+    Models'
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://aclanthology.org/2026.acl-long.4/
+- display_date: '2026'
+  venue: TKDE 2026
+  title: Consensus-Guided Multi-Match Adaptation With Uncertainty-Calibrated Thresholding for Test-Time Cross-Modal
+    Retrieval
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://doi.org/10.1109/TKDE.2026.3731404
+- display_date: '2025'
+  venue: KDD 2025
+  title: Evidential Prototype Learning for Semi-supervised Medical Image Segmentation
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://doi.org/10.1145/3711896.3736944
+- display_date: '2025'
+  venue: PR 2025
+  title: Co-evidential fusion with information volume for semi-supervised medical image segmentation
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://doi.org/10.1016/j.patcog.2025.111639
+- display_date: '2025'
+  venue: ICASSP 2025
+  title: An Adaptive Framework for Multi-View Clustering Leveraging Conditional Entropy Optimization
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://doi.org/10.1109/ICASSP49660.2025.10888088
+- display_date: '2024'
+  venue: BIBM 2024
+  title: Efficient Prototype Consistency Learning in Semi-Supervised Medical Image Segmentation via Joint Uncertainty
+    and Data Augmentation
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://doi.org/10.1109/BIBM62325.2024.10821789
+- display_date: '2024'
+  venue: BIBM 2024
+  title: Mutual Evidential Deep Learning for Semi-supervised Medical Image Segmentation
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://doi.org/10.1109/BIBM62325.2024.10822008
+- display_date: '2024'
+  venue: ICASSP 2024
+  title: Generalized Uncertainty-Based Evidential Fusion with Hybrid Multi-Head Attention for Weak-Supervised Temporal
+    Action Localization
+  text_en: 'Our paper was accepted:'
+  text_zh: 论文录用：
+  link: https://ieeexplore.ieee.org/abstract/document/10446799

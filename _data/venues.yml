@@ -1,0 +1,64 @@
+NeurIPS:
+  name: Conference on Neural Information Processing Systems
+  grade: A
+  type: Conference
+  url: https://neurips.cc/
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+ACL:
+  name: Annual Meeting of the Association for Computational Linguistics
+  grade: A
+  type: Conference
+  url: https://www.aclweb.org/
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+KDD:
+  name: ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+  grade: A
+  type: Conference
+  url: https://kdd.org/
+  source: https://www.ccf.org.cn/Academic_Evaluation/DM_CS/
+TPAMI:
+  name: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  grade: A
+  type: Journal
+  url: https://www.computer.org/csdl/journal/tp
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+TKDE:
+  name: IEEE Transactions on Knowledge and Data Engineering
+  grade: A
+  type: Journal
+  url: https://www.computer.org/csdl/journal/tk
+  source: https://www.ccf.org.cn/Academic_Evaluation/DM_CS/
+PR:
+  name: Pattern Recognition
+  grade: B
+  type: Journal
+  url: https://www.sciencedirect.com/journal/pattern-recognition
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+TNNLS:
+  name: IEEE Transactions on Neural Networks and Learning Systems
+  grade: B
+  type: Journal
+  url: https://cis.ieee.org/publications/t-neural-networks-and-learning-systems
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+ICASSP:
+  name: IEEE International Conference on Acoustics, Speech and Signal Processing
+  grade: B
+  type: Conference
+  url: https://2026.ieeeicassp.org/
+  source: https://www.ccf.org.cn/Academic_Evaluation/CGAndMT/
+BIBM:
+  name: IEEE International Conference on Bioinformatics and Biomedicine
+  grade: B
+  type: Conference
+  url: https://ieeebibm.org/
+  source: https://www.ccf.org.cn/Academic_Evaluation/Cross_Compre_Emerging/
+KSEM:
+  name: International Conference on Knowledge Science, Engineering and Management
+  grade: C
+  type: Conference
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+IJCNN:
+  name: International Joint Conference on Neural Networks
+  grade: C
+  type: Conference
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/

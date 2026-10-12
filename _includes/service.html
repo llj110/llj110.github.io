@@ -1,0 +1,10 @@
+<section class="section service-section" id="service" aria-labelledby="service-title">
+  <div class="section-heading"><div><p class="section-kicker">02 / COMMUNITY</p><h2 id="service-title"><span data-lang="en">Academic service</span><span data-lang="zh" lang="zh-CN">学术审稿</span></h2></div></div>
+  <p class="service-intro"><span data-lang="en">Reviewer for journals and conferences.</span><span data-lang="zh" lang="zh-CN">期刊与国际会议审稿人。</span></p>
+  {% assign journals = site.data.service | where: 'type', 'Journal' %}{% assign conferences = site.data.service | where: 'type', 'Conference' %}
+  {% for group in (1..2) %}
+  {% if group == 1 %}{% assign entries = journals %}{% else %}{% assign entries = conferences %}{% endif %}
+  {% if entries.size > 0 %}
+  <div class="service-group"><h3>{% if group == 1 %}<span data-lang="en">Journals</span><span data-lang="zh" lang="zh-CN">期刊</span>{% else %}<span data-lang="en">Conferences</span><span data-lang="zh" lang="zh-CN">会议</span>{% endif %}</h3><ul>{% for entry in entries %}{% assign venue = site.data.venues[entry.venue] %}<li><div><a class="service-name" href="{{ venue.url }}" target="_blank" rel="noopener noreferrer">{{ entry.venue }}</a>{% include rank.html venue=entry.venue %}</div><p>{{ venue.name }}</p>{% if entry.years %}<span class="service-years">{{ entry.years }}</span>{% endif %}</li>{% endfor %}</ul></div>
+  {% endif %}{% endfor %}
+</section>

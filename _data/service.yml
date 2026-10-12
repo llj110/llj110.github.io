@@ -1,0 +1,7 @@
+# Confirmed directly by the owner. Add email-verified roles only after checking the invitation/acceptance status.
+- venue: PR
+  type: Journal
+- venue: TNNLS
+  type: Journal
+- venue: KDD
+  type: Conference

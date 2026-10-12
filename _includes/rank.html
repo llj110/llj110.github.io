@@ -1,0 +1,1 @@
+{% assign venue_info = site.data.venues[include.venue] %}{% if venue_info.grade %}<a class="rank-badge rank-{{ venue_info.grade | downcase }}" href="{{ venue_info.source }}" target="_blank" rel="noopener noreferrer" aria-label="{{ include.venue }} — CCF {{ venue_info.grade }}">CCF {{ venue_info.grade }}</a>{% endif %}

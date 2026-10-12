@@ -1,32 +1,20 @@
 ---
 layout: default
-title : Publications
+title: Publications
 navbar_name: Publications
-body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
 ---
-
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
-
-<div class="row">
-    <div class="col-12 col-lg-10">
-        {% for year in pubs_by_year %}
-        {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-sm">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item %}
-            {% endfor %}
-        </div>
-        {% endfor %}
-    </div>
-
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
-        </div>
-    </div>
-
-</div>
+<section class="section publications-page" aria-labelledby="all-publications-title">
+  <p class="eyebrow"><span data-lang="en">RESEARCH</span><span data-lang="zh" lang="zh-CN">研究成果</span></p>
+  <h1 id="all-publications-title"><span data-lang="en">Publications</span><span data-lang="zh" lang="zh-CN">学术论文</span></h1>
+  <p class="muted"><span data-lang="en">Journal and conference papers, followed by preprints. My name is highlighted in bold.</span><span data-lang="zh" lang="zh-CN">期刊与会议论文按年份排列，预印本单独列出。我的姓名以粗体标注。</span></p>
+  <div class="publication-search" hidden><label for="paper-search"><span data-lang="en">Search papers</span><span data-lang="zh" lang="zh-CN">搜索论文</span></label><input id="paper-search" type="search" placeholder="Title, author, or venue" autocomplete="off"><span id="search-status" class="muted" role="status" aria-live="polite"></span></div>
+  {% assign published = site.publications | where_exp: 'item', "item.pub != 'arXiv'" | sort: 'date' | reverse %}
+  {% assign years = published | group_by_exp: 'item', "item.pub_date" %}
+  <nav class="year-nav" aria-label="Publication years">{% for year in years %}<a href="#year-{{ year.name }}">{{ year.name }}</a>{% endfor %}<a href="#preprints"><span data-lang="en">Preprints</span><span data-lang="zh" lang="zh-CN">预印本</span></a></nav>
+  {% for year in years %}
+  <section class="publication-group" id="year-{{ year.name }}" aria-labelledby="heading-{{ year.name }}"><h2 class="year-heading" id="heading-{{ year.name }}">{{ year.name }}</h2><div class="publication-list">{% for item in year.items %}{% include widgets/publication_item.html item=item %}{% endfor %}</div></section>
+  {% endfor %}
+  {% assign preprints = site.publications | where: 'pub', 'arXiv' | sort: 'date' | reverse %}
+  <section class="publication-group" id="preprints" aria-labelledby="preprints-title"><h2 class="year-heading" id="preprints-title"><span data-lang="en">Preprints</span><span data-lang="zh" lang="zh-CN">预印本</span></h2><div class="publication-list">{% for item in preprints %}{% include widgets/publication_item.html item=item %}{% endfor %}</div></section>
+  <p id="no-results" hidden><span data-lang="en">No matching papers. Try another search.</span><span data-lang="zh" lang="zh-CN">未找到相关论文，请尝试其他关键词。</span></p>
+</section>

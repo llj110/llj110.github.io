@@ -1,136 +1,31 @@
-primary_name: "Lijian Li"
-secondary_name: ""
-navbar_name: "Lijian Li"
-
+primary_name: Lijian Li
+secondary_name: ''
+navbar_name: Lijian Li
 positions:
-  - '<span class="no-break"><img src="assets/images/badges/macao.png" alt="University of Macau" class="inline-badge"/></span> M.S., University of Macau (Now)'
-  - '<span class="no-break"><img src="assets/images/badges/swu.jpg" alt="Southwest University" class="inline-badge"/></span> B.S., Southwest University (2023)'
-
-email: "mc35305@umac.mo"
+- Ph.D. student, University of Macau
+- B.S., Southwest University (2023)
+email: mc35305@umac.mo
 gscholar: Pe_tlDMAAAAJ
 researchgate: Lijian-Li-2
 github: llj110
-# twitter: ztxtechnology
-# wechat_qrcode: assets/images/etc/wechat.jpg
-# wechat_prompt: >-
-#  Please tell me your <strong>name</strong> and <strong>affiliation</strong> (current or past) when adding my wechat. Thanks!
-# linkedin: your-linked-in-id
 orcid: 0009-0006-2009-3269
-
-short_bio: >-
-  I am currently a Master student at the Faculty of Science and Technology, University of Macau, under the supervision of Prof. Chi-Man Pun. Previously, I earned my B.S. degree in Software Engineering from Southwest University. My research interests cover Multi-modal Learning, AI-Generated Content, Trustworthy Machine Learning, and Semi-supervised Learning.
-
+short_bio: I am a Ph.D. student at the Faculty of Science and Technology, University of Macau, supervised by Prof.
+  Chi-Man Pun. I received my B.S. in Software Engineering from Southwest University in 2023. My research interests
+  include multimodal learning, generative AI, trustworthy machine learning, and semi-supervised learning.
 show_portrait: true
 portrait_url: assets/images/photos/llj.jpg
-portrait_caption: >-
-  Shotted in 2023
-
+portrait_caption: Photo taken in 2023
 education:
 - name: University of Macau
   logo: assets/images/badges/macao.png
-  position: M.S. in Faculty of Computer and Technology
-  date: Sep. 2023 - Now
-
+  position: Ph.D. student · Faculty of Science and Technology
+  date: Present
 - name: Southwest University
   logo: assets/images/badges/swu.jpg
   position: B.S. in Software Engineering
   date: Sep. 2019 - Jul. 2023
-
 experience:
 - name: Guangming Laboratory
   logo: assets/images/badges/gm.jpg
   position: Research Intern
   date: Aug. 2024 - Now
-
-# reviewer:
-# - name: IEEE Transactions on Neural Networks and Learning Systems
-
-
-# 2023，电子科技大学新生奖学金
-# 2022，西南大学三好学生
-# 2022，西南大学一等奖学金
-# 2022，西南大学砥砺奋斗奖
-# 2022，中国大学生计算机设计大赛省级二等奖
-# 2022，中国高校计算机大赛省级三等奖
-# 2022，重庆市高校数据库应用程序设计竞赛省级三等奖
-# 2021，西南大学三好学生
-# 2021，西南大学一等奖学金
-# 2021，西南大学志愿服务奖
-# 2021，西南大学创新创业奖
-# 2021，美国大学生数学建模比赛二等奖（Honor Mention）
-# 2021，“高教杯”全国大学生数学建模竞赛省级二等奖；
-# 2020，西南大学三好学生
-# 2020，西南大学三等奖学金
-# 2020，第十二届全国大学生数学竞赛重庆赛区二等奖
-
-# 2023, Freshman Scholarship, University of Electronic Science and Technology of China
-# 2022, Southwest University’s Outstanding Student
-# 2022, First-Class Scholarship, Southwest University
-# 2022, Striving and Struggling Award, Southwest University
-# 2022, Second Prize at the Provincial Level, China College Student Computer Design Competition
-# 2022, Third Prize at the Provincial Level, China College Computer Competition
-# 2022, Third Prize at the Provincial Level, Chongqing Higher Education Institutions Database Application Design Competition
-# 2021, Southwest University’s Outstanding Student
-# 2021, First-Class Scholarship, Southwest University
-# 2021, Volunteer Service Award, Southwest University
-# 2021, Innovation and Entrepreneurship Award, Southwest University
-# 2021, Honorable Mention (Second Prize), American College Student Mathematics Modeling Competition
-# 2021, Second Prize at the Provincial Level, “Higher Education Cup” National College Student Mathematics Modeling Competition
-# 2020, Southwest University’s Outstanding Student
-# 2020, Third-Class Scholarship, Southwest University
-# 2020, Second Prize in the Chongqing Division, 12th National College Student Mathematics Competition
-
-# awards:
-#   - name: Freshman Scholarship, University of Electronic Science and Technology of China
-#     date: 2023
-
-#   - name: Southwest University's Outstanding Student
-#     date: 2022
-
-#   - name: First-Class Scholarship, Southwest University
-#     date: 2022
-
-#   - name: Striving and Struggling Award, Southwest University
-#     date: 2022
-
-#   - name: Second Prize at the Provincial Level, China College Student Computer Design Competition
-#     date: 2022
-
-#   - name: Third Prize at the Provincial Level, China College Computer Competition
-#     date: 2022
-
-#   - name: Third Prize at the Provincial Level, Chongqing Higher Education Institutions Database Application Design Competition
-#     date: 2022
-
-#   - name: Southwest University's Outstanding Student
-#     date: 2021
-
-#   - name: First-Class Scholarship, Southwest University
-#     date: 2021
-
-#   - name: Volunteer Service Award, Southwest University
-#     date: 2021
-
-#   - name: Innovation and Entrepreneurship Award, Southwest University
-#     date: 2021
-
-#   - name: Honorable Mention (Second Prize), American College Student Mathematics Modeling Competition
-#     date: 2021
-
-#   - name: Second Prize at the Provincial Level, "Higher Education Cup" National College Student Mathematics Modeling Competition
-#     date: 2021
-
-#   - name: Southwest University's Outstanding Student
-#     date: 2020
-
-#   - name: Third-Class Scholarship, Southwest University
-#     date: 2020
-
-#   - name: Second Prize in the Chongqing Division, 12th National College Student Mathematics Competition
-#     date: 2020
-
-
-# Feel free to replace the footer text if you would like to, but I will greatly appreciate it 
-# if you keep the link to the template so that more people can benefit from it. Thanks!
-# footer_text: >-
-#   <a href="https://github.com/ztxtech" target="_blank"><i class="fas fa-pencil-ruler"></i> ztxtech's Github</a>
