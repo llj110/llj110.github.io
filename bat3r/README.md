@@ -2,7 +2,7 @@
 
 Public route: https://llj110.github.io/bat3r/
 
-This static project page is built with the existing GitHub Pages Jekyll site. It has an interactive point-cloud comparison, 27 scenes from 7-Scenes / NRGBD, input ground-truth camera paths, paired RGB keyframes, 96 preserved experiment records, method explanation, paper resources, and citation copying. Inference is not executed on the website.
+This static project page is built with the existing GitHub Pages Jekyll site. It includes the paper's method diagram, six original performance figures, nine original qualitative comparison images, and 149 table rows transcribed from Tables 1–4. It also has an interactive point-cloud comparison of 27 separately preserved server scenes, input ground-truth camera paths, paired RGB keyframes, paper resources, and citation copying. Inference is not executed on the website.
 
 ## Data contract
 
@@ -10,9 +10,11 @@ This static project page is built with the existing GitHub Pages Jekyll site. It
 - Each `scene.json` stores camera matrices, common view bounds, source sampling details, and method payload checksums.
 - A `.bin` file contains all XYZ positions as little-endian float32, followed by all original RGB bytes (15 bytes per point in total).
 - PLY downloads reconstruct an interleaved binary file from the displayed sample. They are explicitly labeled preview exports.
-- `results.json` keeps numeric saved-run metrics, seed, sequence count, source tag, and protocol. These records are separate from paper-reported tables and from the geometry gallery.
+- `results.json` contains only paper-reported values, original decimal strings, table numbers, method mode, and depth alignment. Mean and median reconstruction metrics are distinct. OOM is `null` with display text `OOM`; it is never rendered as zero. No sequence counts or extra decimal precision are inferred.
+- `assets/paper` contains the original author-manuscript figures rendered from PDF and the unchanged qualitative comparison PNGs. The numerical table data does not come from rebuttal timing/evaluation snapshots.
 - Camera paths are input ground truth. Do not label them as model estimates.
 - The historical `ttt3r` directory is the modified BAT3R path; attention-only controls are labeled as references rather than independent upstream TTT3R runs.
+- The interactive gallery is a separately preserved export. It is not verified as the paper-selected best run. The paper-matching `eval_results_now` logs round to Table 4 values, but those directories do not retain the corresponding PLY files. The site therefore explicitly distinguishes the interactive samples from the paper's original qualitative figures and does not relabel the existing cloud files as paper-best results.
 
 Original server files are preserved. Public assets contain neither server credentials nor private absolute server paths. The private audit and raw source paper remain outside the published repository. Dataset sources are linked in the BAT3R implementation documentation; 7-Scenes / NRGBD visualization assets are derived from their recorded evaluation sequences.
 

@@ -33,10 +33,21 @@ for entry in gallery:
     if 'cut3r' in meta['methods']:
         assert meta['methods']['cut3r']['sha256']!=meta['methods']['bat3r']['sha256']
 results=json.loads((DATA/'results.json').read_text(encoding='utf-8'))['rows']
-assert len(results)==96
-assert set(x['task'] for x in results)=={'reconstruction','pose','depth','efficiency'}
+assert len(results)==149
+assert set(x['task'] for x in results)=={'reconstruction','pose','depth','ablation'}
 for row in results:
-    assert row['frames']>0 and row['metrics'] and np.isfinite(list(row['metrics'].values())).all()
+    assert row['frames']>0 and row['metrics']
+    assert row['source_table'] in [1,2,3,4] and not row.get('source_tag')
+    for key,value in row['metrics'].items():
+        if value is None: assert row['metric_text'][key]=='OOM'
+        else: assert np.isfinite(value) and float(row['metric_text'][key])==value
+def paper_row(task,dataset,frames,method,alignment=None):
+    return next(x for x in results if (x['task'],x['dataset'],x['frames'],x['method'],x.get('alignment'))==(task,dataset,frames,method,alignment))
+assert paper_row('reconstruction','7-Scenes',500,'BAT3R')['metrics']=={'acc_mean':0.026,'acc_median':0.012,'comp_mean':0.023,'comp_median':0.004,'nc_mean':0.558,'nc_median':0.588}
+assert paper_row('reconstruction','NRGBD',500,'BAT3R')['metrics']=={'acc_mean':0.097,'acc_median':0.037,'comp_mean':0.032,'comp_median':0.004,'nc_mean':0.615,'nc_median':0.687}
+assert paper_row('pose','TUM-dynamics',90,'BAT3R')['metrics']['ate']==0.016
+assert paper_row('depth','KITTI',110,'BAT3R','Metric Scale')['metrics']=={'abs_rel':0.099,'delta125':89.4}
+assert all(x['frames'] in [300,400,500] for x in results if x['task']=='reconstruction')
 for p in DATA.rglob('*.json'):
     text=p.read_text(encoding='utf-8')
     assert '/home/' not in text and 'password' not in text and 'private_key' not in text
@@ -54,6 +65,10 @@ assert import_map['imports']['three']=='/bat3r/assets/lib/three.module.js'
 ids=[x['id'] for x in soup.select('[id]')]; assert len(ids)==len(set(ids))
 assert soup.select_one('#code-resource')['href']=='https://github.com/llj110/BAT3R'
 assert not soup.select('a[href^="mailto:"]')
+assert soup.select_one('#method img')['src']=='assets/paper/overview.png'
+assert len(soup.select('.paper-performance-grid img'))==6
+assert len(soup.select('.paper-qualitative-grid img'))==9
+assert 'not been verified as the paper-selected best run' in soup.select_one('.reconstruction-provenance').text
 for tag in soup.select('a[href],link[href],script[src],img[src]'):
     url=tag.get('src') or tag.get('href'); parts=urlsplit(url)
     if parts.scheme or parts.netloc:continue
@@ -70,4 +85,4 @@ assert sum(x['role']=='Project Lead' for x in projects)==1
 home=BeautifulSoup((SITE/'index.html').read_text(encoding='utf-8'),'html.parser')
 assert home.select_one('#research-projects') and len(home.select('.funding-card li'))==6
 assert home.select_one('a[href="/bat3r/"]')
-print(f'PASS: {len(gallery)} real scenes, {clouds} point clouds, 96 saved result rows, verified payloads and links, 7 research projects; no private paths in exported JSON.')
+print(f'PASS: {len(gallery)} real scenes, {clouds} point clouds, 149 paper table rows, main method figure, 6 paper performance figures, 9 paper qualitative images, honest provenance and valid links.')

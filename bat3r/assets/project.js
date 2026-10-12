@@ -203,7 +203,7 @@ function drawGallery() {
   if(!filtered.length){const p=document.createElement('p');p.textContent=tr('No matching scenes.','没有匹配的场景。');$('scene-grid').append(p);}
 }
 
-const metrics={chamfer:['Chamfer ↓','lower'],acc:['Accuracy ↓','lower'],comp:['Completeness ↓','lower'],nc:['Normal consistency ↑','higher'],ate:['ATE ↓','lower'],rpe_t:['RPE translation ↓','lower'],rpe_r:['RPE rotation ↓','lower'],abs_rel:['Abs Rel ↓','lower'],delta125:['δ < 1.25 ↑','higher'],fps:['FPS ↑','higher'],peak_alloc_gb:['Peak allocated memory (GB) ↓','lower']};
+const metrics={acc_mean:['Accuracy error · Mean ↓','lower','几何精度误差 · 均值 ↓'],acc_median:['Accuracy error · Median ↓','lower','几何精度误差 · 中位数 ↓'],comp_mean:['Completeness error · Mean ↓','lower','完整性误差 · 均值 ↓'],comp_median:['Completeness error · Median ↓','lower','完整性误差 · 中位数 ↓'],nc_mean:['Normal consistency · Mean ↑','higher','法向一致性 · 均值 ↑'],nc_median:['Normal consistency · Median ↑','higher','法向一致性 · 中位数 ↑'],ate:['ATE ↓','lower','ATE ↓'],rpe_t:['RPE translation ↓','lower','RPE 平移 ↓'],rpe_r:['RPE rotation ↓','lower','RPE 旋转 ↓'],abs_rel:['Abs Rel ↓','lower','Abs Rel ↓'],delta125:['δ < 1.25 (%) ↑','higher','δ < 1.25（%）↑']};
 function selectOptions(select,values,selected) {
   const old=selected??select.value; select.replaceChildren();
   for(const [value,label] of values){const o=document.createElement('option');o.value=value;o.textContent=label;select.append(o);}
@@ -212,28 +212,33 @@ function selectOptions(select,values,selected) {
 function configureResults(level=0) {
   let rows=resultData.filter(x=>x.task===resultTask);
   if(!rows.length)return;
-  if(level<=0)selectOptions($('result-dataset'),[...new Set(rows.map(x=>x.dataset))].map(x=>[x,x]));
+  if(level<=0)selectOptions($('result-dataset'),[...new Set(rows.map(x=>x.dataset))].map(x=>[x,x]),resultTask==='pose'?'TUM-dynamics':undefined);
   rows=rows.filter(x=>x.dataset===$('result-dataset').value);
-  if(level<=1)selectOptions($('result-length'),[...new Set(rows.map(x=>x.frames))].sort((a,b)=>a-b).map(x=>[String(x),String(x)]));
+  if(level<=1)selectOptions($('result-length'),[...new Set(rows.map(x=>x.frames))].sort((a,b)=>a-b).map(x=>[String(x),String(x)]),resultTask==='reconstruction'&&level===0?'500':undefined);
   rows=rows.filter(x=>x.frames===Number($('result-length').value));
-  if(level<=2)selectOptions($('result-metric'),Object.keys(rows[0].metrics).filter(x=>metrics[x]).map(x=>[x,metrics[x][0]]));
+  $('alignment-control').hidden=resultTask!=='depth';
+  if(resultTask==='depth'){selectOptions($('result-alignment'),[...new Set(rows.map(x=>x.alignment))].map(x=>[x,tr(x,x==='Metric Scale'?'绝对尺度':'序列尺度对齐')]));rows=rows.filter(x=>x.alignment===$('result-alignment').value);}
+  if(level<=2)selectOptions($('result-metric'),Object.keys(rows[0].metrics).filter(x=>metrics[x]).map(x=>[x,tr(metrics[x][0],metrics[x][2])]));
   drawResults(rows);
 }
 function drawResults(rows) {
   const metric=$('result-metric').value, range=Math.max(...rows.map(x=>x.metrics[metric]??0))*1.15;
-  $('result-chart').replaceChildren(); const h=document.createElement('p');h.className='metric-heading';h.textContent=metrics[metric][0]+tr(metrics[metric][1]==='lower'?' · Lower is better':' · Higher is better',metrics[metric][1]==='lower'?' · 越低越好':' · 越高越好');$('result-chart').append(h);
+  $('result-chart').replaceChildren(); const h=document.createElement('p');h.className='metric-heading';h.textContent=tr(metrics[metric][0],metrics[metric][2])+tr(metrics[metric][1]==='lower'?' · Lower is better':' · Higher is better',metrics[metric][1]==='lower'?' · 越低越好':' · 越高越好');$('result-chart').append(h);
   $('result-table').querySelector('tbody').replaceChildren();
-  for(const row of rows) {
-    const value=row.metrics[metric]; if(!Number.isFinite(value))continue;
-    const b=document.createElement('div');b.className='bar-row'+(row.method==='bat3r'?' highlight':'');
-    const label=document.createElement('span');label.textContent=names[row.method]||row.method;
-    const track=document.createElement('div');track.className='bar-track';const fill=document.createElement('div');fill.className='bar-fill';fill.style.width=`${Math.max(1,value/range*100)}%`;track.append(fill);
-    const number=document.createElement('span');number.className='bar-value';number.textContent=value.toFixed(metric==='fps'||metric==='delta125'?2:4);b.append(label,track,number);$('result-chart').append(b);
-    const r=document.createElement('tr');if(row.method==='bat3r')r.className='highlight';
-    for(const text of [names[row.method]||row.method,number.textContent,row.sequences??'—']){const td=document.createElement('td');td.textContent=text;r.append(td);}
+  for(const row of [...rows].sort((a,b)=>Number(b.method.startsWith('BAT3R'))-Number(a.method.startsWith('BAT3R')))) {
+    const value=row.metrics[metric],highlight=row.method.startsWith('BAT3R'),display=row.metric_text[metric];
+    if(Number.isFinite(value)){
+      const b=document.createElement('div');b.className='bar-row'+(highlight?' highlight':'');
+      const label=document.createElement('span');label.textContent=row.method;
+      const track=document.createElement('div');track.className='bar-track';const fill=document.createElement('div');fill.className='bar-fill';fill.style.width=`${Math.max(1,value/range*100)}%`;track.append(fill);
+      const number=document.createElement('span');number.className='bar-value';number.textContent=display;b.append(label,track,number);$('result-chart').append(b);
+    }
+    const r=document.createElement('tr');if(highlight)r.className='highlight';
+    const mode=row.online===true?tr('Online','在线'):row.online===false?tr('Offline','离线'):tr('Ablation','消融');
+    for(const text of [row.method,display,mode]){const td=document.createElement('td');td.textContent=text;r.append(td);}
     $('result-table').querySelector('tbody').append(r);
   }
-  $('result-caption').textContent=`${$('result-dataset').value} · ${$('result-length').value} `+tr('frame cap','帧上限');
+  $('result-caption').textContent=tr('Paper Table ','论文表 ')+rows[0].source_table+` · ${$('result-dataset').value} · ${$('result-length').value} `+tr('frames','帧')+(rows[0].alignment?' · '+rows[0].alignment:'');
   $('result-protocol').textContent=tr(rows[0].protocol,rows[0].protocol_zh||rows[0].protocol);
 }
 
@@ -262,8 +267,9 @@ $('show-all-scenes').addEventListener('click',()=>{allScenes=true;drawGallery();
 $('dataset-filter').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;selectedFilter=b.dataset.filter;allScenes=false;for(const x of $('dataset-filter').querySelectorAll('button'))x.setAttribute('aria-pressed',String(x===b));drawGallery();});
 $('result-tabs').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;resultTask=b.dataset.task;for(const x of $('result-tabs').querySelectorAll('button'))x.setAttribute('aria-pressed',String(x===b));configureResults();});
 $('result-dataset').addEventListener('change',()=>configureResults(1));$('result-length').addEventListener('change',()=>configureResults(2));$('result-metric').addEventListener('change',()=>configureResults(3));
+$('result-alignment').addEventListener('change',()=>configureResults(2));
 $('copy-citation').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('bibtex').textContent);$('copy-status').textContent=tr('BibTeX copied.','BibTeX 已复制。');}catch{$('copy-status').textContent=tr('Select the citation text to copy it.','请选择引用文本并复制。');}});
-new MutationObserver(()=>{if(gallery.length)drawGallery();if(meta)setFrame(Number($('camera-frame').value));setPlaying(playing);if(resultData.length)configureResults(3);}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
+new MutationObserver(()=>{if(gallery.length)drawGallery();if(meta)setFrame(Number($('camera-frame').value));setPlaying(playing);if(resultData.length)configureResults(2);}).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});
 new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;},{rootMargin:'150px'}).observe($('viewer-stage'));
 function tick(time) {
   requestAnimationFrame(tick);
