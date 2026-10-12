@@ -19,9 +19,11 @@ for entry in gallery:
     assert meta['camera_kind']=='ground-truth input camera poses'
     matrices=np.asarray(meta['cameras']); assert matrices.shape==(meta['frames'],4,4)
     assert np.isfinite(matrices).all() and np.allclose(matrices[:,3,:],[0,0,0,1],atol=1e-5)
-    assert len(meta['inputs'])==12
+    assert len(meta['inputs'])==meta['frames'] and meta['input_stride']==2
+    assert [x['frame'] for x in meta['inputs']]==list(range(meta['frames']))
     for frame in meta['inputs']:
-        assert 0<=frame['frame']<meta['frames'] and (DATA/frame['file']).is_file()
+        assert frame['source_frame']==frame['frame']*2 and (DATA/frame['file']).is_file()
+        assert hashlib.sha256((DATA/frame['file']).read_bytes()).hexdigest()==frame['sha256']
     assert (DATA/meta['poster']).is_file()
     for method,info in meta['methods'].items():
         content=(DATA/info['file']).read_bytes(); n=info['points']

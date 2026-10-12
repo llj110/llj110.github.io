@@ -14,6 +14,8 @@ if (['cut3r', 'ground_truth', 'none'].includes(viewOptions.get('compare'))) {
 }
 let gallery = [], meta, viewers = [], generation = 0, syncing = false, selectedFilter = 'all', allScenes = false;
 let referenceGeneration = 0;
+let frameRequest = 0, framePending = false;
+const inputImageCache = new Map();
 let visible = true, playing = false, previousTick = 0, resultData = [], resultTask = 'reconstruction';
 
 async function json(path) {
@@ -138,18 +140,54 @@ function applyColors(v) {
   g.attributes.color.needsUpdate=true;
 }
 
-function setFrame(frame) {
-  if(!meta) return;
-  frame=Math.max(0,Math.min(meta.frames-1,frame)); $('camera-frame').value=frame;
-  $('frame-label').textContent=tr(`Frame ${frame+1} / ${meta.frames}`,`第 ${frame+1} / ${meta.frames} 帧`);
-  for(const v of viewers) if(v.marker) {
-    v.marker.matrix.fromArray(meta.cameras[frame].flat()).transpose().premultiply(new THREE.Matrix4().makeScale(1,-1,-1));
-    v.marker.matrixWorldNeedsUpdate=true;
+function inputImage(entry) {
+  const url=new URL(entry.file,base).href;
+  if(inputImageCache.has(url)) {
+    const cached=inputImageCache.get(url);
+    inputImageCache.delete(url); inputImageCache.set(url,cached);
+    return cached;
   }
-  if(meta.inputs.length) {
-    const nearest=meta.inputs.reduce((best,item)=>Math.abs(item.frame-frame)<Math.abs(best.frame-frame)?item:best);
-    $('input-image').src=new URL(nearest.file,base).href;
-    $('input-image').alt=tr(`Input keyframe ${nearest.frame+1} from ${meta.name}`,`${meta.name} 的输入关键帧 ${nearest.frame+1}`);
+  const pending=new Promise((resolve,reject)=>{
+    const image=new Image(); image.decoding='async';
+    image.onload=()=>image.decode().then(()=>resolve(image),reject);
+    image.onerror=()=>{inputImageCache.delete(url);reject(new Error('Input RGB frame unavailable'));};
+    image.src=url;
+  });
+  inputImageCache.set(url,pending);
+  while(inputImageCache.size>24) inputImageCache.delete(inputImageCache.keys().next().value);
+  return pending;
+}
+function preloadInputFrames(frame) {
+  for(let offset=1;offset<=12;offset++) {
+    const entry=meta.inputs[(frame+offset)%meta.frames];
+    if(entry) inputImage(entry).catch(()=>{});
+  }
+}
+async function setFrame(frame) {
+  if(!meta) return;
+  frame=Math.max(0,Math.min(meta.frames-1,Math.trunc(frame)));
+  const scene=meta, request=++frameRequest, entry=scene.inputs[frame];
+  framePending=true;
+  try {
+    if(!entry||entry.frame!==frame) throw new Error('Input RGB frame is missing');
+    const image=await inputImage(entry);
+    if(request!==frameRequest||scene!==meta) return;
+    $('camera-frame').value=frame;
+    $('frame-label').textContent=tr(`Frame ${frame+1} / ${scene.frames}`,`第 ${frame+1} / ${scene.frames} 帧`);
+    for(const v of viewers) if(v.marker) {
+      v.marker.matrix.fromArray(scene.cameras[frame].flat()).transpose().premultiply(new THREE.Matrix4().makeScale(1,-1,-1));
+      v.marker.matrixWorldNeedsUpdate=true;
+    }
+    $('input-image').src=image.src;
+    $('input-image').alt=tr(`Input RGB frame ${frame+1} from ${scene.name}`,`${scene.name} 的第 ${frame+1} 张输入 RGB 图像`);
+    preloadInputFrames(frame);
+  } catch(error) {
+    if(request===frameRequest&&scene===meta) {
+      setPlaying(false);
+      $('viewer-status').textContent=tr(`RGB frame ${frame+1} could not be loaded. Try this frame again.`,`第 ${frame+1} 张 RGB 图像加载失败，请重试。`);
+    }
+  } finally {
+    if(request===frameRequest) framePending=false;
   }
 }
 
@@ -157,13 +195,14 @@ async function loadScene(id) {
   const token=++generation;
   $('viewer-status').textContent=tr('Loading saved reconstruction…','正在加载真实重建结果…');
   $('download-cloud').disabled=true; setPlaying(false);
+  ++frameRequest; framePending=false; inputImageCache.clear();
   try {
     const item=gallery.find(x=>x.id===id); if(!item) return;
     const next=await json(item.metadata); if(token!==generation)return;
     meta=next; $('scene-select').value=id;
     $('viewer-poster').src=new URL(meta.poster,base).href;
     $('viewer-poster').hidden=false;
-    $('camera-frame').max=meta.frames-1; setFrame(0);
+    $('camera-frame').max=meta.frames-1; await setFrame(0); if(token!==generation)return;
     const option=$('compare-select').querySelector('option[value="cut3r"]'); option.disabled=!meta.methods.cut3r;
     if($('compare-select').value==='cut3r'&&!meta.methods.cut3r) $('compare-select').value='ground_truth';
     if(!viewers.length) viewers=[makeViewer($('canvas-left')),makeViewer($('canvas-right'))];
@@ -279,8 +318,9 @@ new MutationObserver(()=>{if(gallery.length)drawGallery();if(meta)setFrame(Numbe
 new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;},{rootMargin:'150px'}).observe($('viewer-stage'));
 function tick(time) {
   requestAnimationFrame(tick);
-  if(!visible||document.hidden)return;
-  if(playing&&meta&&time-previousTick>75){setFrame((Number($('camera-frame').value)+1)%meta.frames);previousTick=time;}
+  if(document.hidden)return;
+  if(playing&&meta&&!framePending&&time-previousTick>75){setFrame((Number($('camera-frame').value)+1)%meta.frames);previousTick=time;}
+  if(!visible)return;
   // One driver keeps the two orbiting cameras synchronized.
   for(let i=0;i<viewers.length;i++){const v=viewers[i];if(i===0)v.controls.update();if(i===0||!$('view-right').hidden)v.renderer.render(v.scene,v.camera);}
 }

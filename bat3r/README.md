@@ -2,12 +2,12 @@
 
 Public route: https://llj110.github.io/bat3r/
 
-This static project page is built with the existing GitHub Pages Jekyll site. It includes the complete English abstract verbatim from the author manuscript and a full Chinese translation, the paper's method diagram, six original performance figures, nine original qualitative comparison images, and 149 table rows transcribed from Tables 1–4. It also has an interactive point-cloud comparison of 27 separately preserved server scenes, input ground-truth camera paths, paired RGB keyframes, paper resources, and citation copying. Inference is not executed on the website.
+This static project page is built with the existing GitHub Pages Jekyll site. It includes the complete English abstract verbatim from the author manuscript and a full Chinese translation, the paper's method diagram, six original performance figures, nine original qualitative comparison images, and 149 table rows transcribed from Tables 1–4. It also has an interactive point-cloud comparison of 27 separately preserved server scenes, input ground-truth camera paths, every corresponding RGB input frame (12,658 total; source stride 2), paper resources, and citation copying. Inference is not executed on the website.
 
 ## Data contract
 
 - `assets/data/gallery.json` lists scene IDs, previews, methods, and metadata paths.
-- Each `scene.json` stores camera matrices, common view bounds, source sampling details, and method payload checksums.
+- Each `scene.json` stores camera matrices, common view bounds, source sampling details, and method payload checksums. Every camera frame has its actual RGB image, with consecutive input indices and original source index `2 * frame`. Frame playback preloads the next 12 images and waits for each requested image before advancing; it does not skip missing or slow frames.
 - A `.bin` file contains all XYZ positions as little-endian float32, followed by all original RGB bytes (15 bytes per point in total).
 - PLY downloads reconstruct an interleaved binary file from the displayed sample. They are explicitly labeled preview exports.
 - `results.json` contains only paper-reported values, original decimal strings, table numbers, method mode, and depth alignment. Mean and median reconstruction metrics are distinct. OOM is `null` with display text `OOM`; it is never rendered as zero. No sequence counts or extra decimal precision are inferred.
