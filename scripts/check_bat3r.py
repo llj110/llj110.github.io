@@ -81,7 +81,7 @@ for tag in soup.select('a[href],link[href],script[src],img[src]'):
         assert other.find(id=parts.fragment),url
 projects=yaml.safe_load((ROOT/'_data/research_projects.yml').read_text(encoding='utf-8'))
 assert sum(len(x.get('grants',[])) for x in projects)==6
-assert sum(x['role']=='Project Lead' for x in projects)==1
+assert all(x['role']=='Participant' for x in projects)
 home=BeautifulSoup((SITE/'index.html').read_text(encoding='utf-8'),'html.parser')
 assert home.select_one('#research-projects') and len(home.select('.funding-card li'))==6
 assert home.select_one('a[href="/bat3r/"]')

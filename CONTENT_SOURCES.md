@@ -49,7 +49,7 @@ The EPCL-JUDA code link is verified against the owner's [public implementation r
 
 ## Research project participation
 
-The owner supplied six grant numbers (NSFC 62436006, 62192730, 62192731; National Key R&D 2023YFC3502900; Macau FDCT 0141/2023/RIA2, 0193/2023/RIA3) and confirmed Participant roles. The Chongqing college student innovation and entrepreneurship project is listed as Project Lead. No grant project titles, award dates, or amount figures were inferred. These personal participation records are not presented as BAT3R-specific acknowledgements.
+The owner supplied six grant numbers (NSFC 62436006, 62192730, 62192731; National Key R&D 2023YFC3502900; Macau FDCT 0141/2023/RIA2, 0193/2023/RIA3) and confirmed Participant roles. No grant project titles, award dates, or amount figures were inferred. These personal participation records are not presented as BAT3R-specific acknowledgements.
 
 ## BAT3R project website
 
