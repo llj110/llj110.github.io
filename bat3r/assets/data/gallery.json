@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "export_date": "2026-10-12",
+  "scenes": [
+    {
+      "id": "7s-chess_seq-03",
+      "dataset": "7-Scenes",
+      "name": "chess / seq-03",
+      "frames": 500,
+      "poster": "7s-chess_seq-03/poster.webp",
+      "metadata": "7s-chess_seq-03/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-chess_seq-05",
+      "dataset": "7-Scenes",
+      "name": "chess / seq-05",
+      "frames": 500,
+      "poster": "7s-chess_seq-05/poster.webp",
+      "metadata": "7s-chess_seq-05/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-fire_seq-03",
+      "dataset": "7-Scenes",
+      "name": "fire / seq-03",
+      "frames": 500,
+      "poster": "7s-fire_seq-03/poster.webp",
+      "metadata": "7s-fire_seq-03/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-fire_seq-04",
+      "dataset": "7-Scenes",
+      "name": "fire / seq-04",
+      "frames": 500,
+      "poster": "7s-fire_seq-04/poster.webp",
+      "metadata": "7s-fire_seq-04/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-heads_seq-01",
+      "dataset": "7-Scenes",
+      "name": "heads / seq-01",
+      "frames": 500,
+      "poster": "7s-heads_seq-01/poster.webp",
+      "metadata": "7s-heads_seq-01/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-office_seq-02",
+      "dataset": "7-Scenes",
+      "name": "office / seq-02",
+      "frames": 500,
+      "poster": "7s-office_seq-02/poster.webp",
+      "metadata": "7s-office_seq-02/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-office_seq-06",
+      "dataset": "7-Scenes",
+      "name": "office / seq-06",
+      "frames": 500,
+      "poster": "7s-office_seq-06/poster.webp",
+      "metadata": "7s-office_seq-06/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-office_seq-07",
+      "dataset": "7-Scenes",
+      "name": "office / seq-07",
+      "frames": 500,
+      "poster": "7s-office_seq-07/poster.webp",
+      "metadata": "7s-office_seq-07/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-office_seq-09",
+      "dataset": "7-Scenes",
+      "name": "office / seq-09",
+      "frames": 500,
+      "poster": "7s-office_seq-09/poster.webp",
+      "metadata": "7s-office_seq-09/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-pumpkin_seq-01",
+      "dataset": "7-Scenes",
+      "name": "pumpkin / seq-01",
+      "frames": 500,
+      "poster": "7s-pumpkin_seq-01/poster.webp",
+      "metadata": "7s-pumpkin_seq-01/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-pumpkin_seq-07",
+      "dataset": "7-Scenes",
+      "name": "pumpkin / seq-07",
+      "frames": 500,
+      "poster": "7s-pumpkin_seq-07/poster.webp",
+      "metadata": "7s-pumpkin_seq-07/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-redkitchen_seq-03",
+      "dataset": "7-Scenes",
+      "name": "redkitchen / seq-03",
+      "frames": 500,
+      "poster": "7s-redkitchen_seq-03/poster.webp",
+      "metadata": "7s-redkitchen_seq-03/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-redkitchen_seq-04",
+      "dataset": "7-Scenes",
+      "name": "redkitchen / seq-04",
+      "frames": 500,
+      "poster": "7s-redkitchen_seq-04/poster.webp",
+      "metadata": "7s-redkitchen_seq-04/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-redkitchen_seq-06",
+      "dataset": "7-Scenes",
+      "name": "redkitchen / seq-06",
+      "frames": 500,
+      "poster": "7s-redkitchen_seq-06/poster.webp",
+      "metadata": "7s-redkitchen_seq-06/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-redkitchen_seq-12",
+      "dataset": "7-Scenes",
+      "name": "redkitchen / seq-12",
+      "frames": 500,
+      "poster": "7s-redkitchen_seq-12/poster.webp",
+      "metadata": "7s-redkitchen_seq-12/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-redkitchen_seq-14",
+      "dataset": "7-Scenes",
+      "name": "redkitchen / seq-14",
+      "frames": 500,
+      "poster": "7s-redkitchen_seq-14/poster.webp",
+      "metadata": "7s-redkitchen_seq-14/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-stairs_seq-01",
+      "dataset": "7-Scenes",
+      "name": "stairs / seq-01",
+      "frames": 250,
+      "poster": "7s-stairs_seq-01/poster.webp",
+      "metadata": "7s-stairs_seq-01/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "7s-stairs_seq-04",
+      "dataset": "7-Scenes",
+      "name": "stairs / seq-04",
+      "frames": 250,
+      "poster": "7s-stairs_seq-04/poster.webp",
+      "metadata": "7s-stairs_seq-04/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth",
+        "cut3r"
+      ]
+    },
+    {
+      "id": "nr-breakfast_room",
+      "dataset": "NRGBD",
+      "name": "Breakfast Room",
+      "frames": 500,
+      "poster": "nr-breakfast_room/poster.webp",
+      "metadata": "nr-breakfast_room/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth"
+      ]
+    },
+    {
+      "id": "nr-complete_kitchen",
+      "dataset": "NRGBD",
+      "name": "Complete Kitchen",
+      "frames": 500,
+      "poster": "nr-complete_kitchen/poster.webp",
+      "metadata": "nr-complete_kitchen/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth"
+      ]
+    },
+    {
+      "id": "nr-green_room",
+      "dataset": "NRGBD",
+      "name": "Green Room",
+      "frames": 500,
+      "poster": "nr-green_room/poster.webp",
+      "metadata": "nr-green_room/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth"
+      ]
+    },
+    {
+      "id": "nr-grey_white_room",
+      "dataset": "NRGBD",
+      "name": "Grey White Room",
+      "frames": 500,
+      "poster": "nr-grey_white_room/poster.webp",
+      "metadata": "nr-grey_white_room/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth"
+      ]
+    },
+    {
+      "id": "nr-kitchen",
+      "dataset": "NRGBD",
+      "name": "Kitchen",
+      "frames": 500,
+      "poster": "nr-kitchen/poster.webp",
+      "metadata": "nr-kitchen/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth"
+      ]
+    },
+    {
+      "id": "nr-morning_apartment",
+      "dataset": "NRGBD",
+      "name": "Morning Apartment",
+      "frames": 460,
+      "poster": "nr-morning_apartment/poster.webp",
+      "metadata": "nr-morning_apartment/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth"
+      ]
+    },
+    {
+      "id": "nr-staircase",
+      "dataset": "NRGBD",
+      "name": "Staircase",
+      "frames": 500,
+      "poster": "nr-staircase/poster.webp",
+      "metadata": "nr-staircase/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth"
+      ]
+    },
+    {
+      "id": "nr-thin_geometry",
+      "dataset": "NRGBD",
+      "name": "Thin Geometry",
+      "frames": 198,
+      "poster": "nr-thin_geometry/poster.webp",
+      "metadata": "nr-thin_geometry/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth"
+      ]
+    },
+    {
+      "id": "nr-whiteroom",
+      "dataset": "NRGBD",
+      "name": "Whiteroom",
+      "frames": 500,
+      "poster": "nr-whiteroom/poster.webp",
+      "metadata": "nr-whiteroom/scene.json",
+      "methods": [
+        "bat3r",
+        "ground_truth"
+      ]
+    }
+  ],
+  "source_note": "Preserved benchmark exports. Historical ttt3r directories contain the modified BAT3R implementation; cut3r is its reference update path. Camera tracks are ground-truth input poses."
+}

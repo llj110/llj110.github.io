@@ -1,0 +1,4 @@
+<section class="section" id="research-projects" aria-labelledby="research-projects-title">
+  <div class="section-heading"><div><p class="section-kicker">04 / FUNDED RESEARCH</p><h2 id="research-projects-title"><span data-lang="en">Research projects</span><span data-lang="zh" lang="zh-CN">科研项目</span></h2></div></div>
+  <div class="funding-grid">{% for project in site.data.research_projects %}<article class="funding-card"><h3><span data-lang="en">{{ project.name }}</span><span data-lang="zh" lang="zh-CN">{{ project.name_zh }}</span></h3><p class="funding-role"><span data-lang="en">{{ project.role }}</span><span data-lang="zh" lang="zh-CN">{{ project.role_zh }}</span></p>{% if project.grants %}<ul>{% for grant in project.grants %}<li><span data-lang="en">Grant</span><span data-lang="zh" lang="zh-CN">项目编号</span> <strong>{{ grant }}</strong></li>{% endfor %}</ul>{% endif %}</article>{% endfor %}</div>
+</section>

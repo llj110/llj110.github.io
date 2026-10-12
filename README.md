@@ -9,6 +9,8 @@ A responsive Jekyll homepage for https://llj110.github.io/, with English / Chine
 - `_data/news.yml`: newest updates first. Each item has a date, venue, complete paper title, bilingual wording, and a paper link.
 - `_publications/<year>/*.md`: paper metadata, ordered authors, links, a one-sentence summary, and an optional overview figure. Set `selected: true` to show a paper on the homepage.
 - `_data/service.yml`: confirmed reviewer roles; optional `years` only when verified. Keep invitations without acceptance separate from actual reviewer service.
+- `_data/research_projects.yml`: owner-confirmed grant participation and student project leadership.
+- `bat3r/`: project website, interactive 3D gallery, and preserved evaluation results. See `bat3r/README.md`.
 - `_data/venues.yml`: venue names, official links, CCF classifications, and CCF source links.
 - `assets/css/global.css`: page layout, colors, and responsive styles.
 

@@ -1,0 +1,1362 @@
+{
+  "export_date": "2026-10-12",
+  "scope": "Preserved server evaluation records, separate from paper-reported tables.",
+  "rows": [
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 100,
+      "method": "bat3r",
+      "metrics": {
+        "acc": 0.0406,
+        "comp": 0.03913,
+        "chamfer": 0.03986,
+        "nc": 0.61943
+      },
+      "sequences": 18,
+      "source_tag": "REC7_100_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 100,
+      "method": "cut3r",
+      "metrics": {
+        "acc": 0.04873,
+        "comp": 0.04081,
+        "chamfer": 0.04477,
+        "nc": 0.5925
+      },
+      "sequences": 18,
+      "source_tag": "REC7_100_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 100,
+      "method": "ttt3r",
+      "metrics": {
+        "acc": 0.04147,
+        "comp": 0.03683,
+        "chamfer": 0.03915,
+        "nc": 0.6094
+      },
+      "sequences": 18,
+      "source_tag": "REC7_100_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 200,
+      "method": "bat3r",
+      "metrics": {
+        "acc": 0.04533,
+        "comp": 0.06401,
+        "chamfer": 0.05467,
+        "nc": 0.59617
+      },
+      "sequences": 18,
+      "source_tag": "REC7_200_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 200,
+      "method": "cut3r",
+      "metrics": {
+        "acc": 0.09477,
+        "comp": 0.07618,
+        "chamfer": 0.08547,
+        "nc": 0.558
+      },
+      "sequences": 18,
+      "source_tag": "REC7_200_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 200,
+      "method": "ttt3r",
+      "metrics": {
+        "acc": 0.0498,
+        "comp": 0.06418,
+        "chamfer": 0.05699,
+        "nc": 0.58402
+      },
+      "sequences": 18,
+      "source_tag": "REC7_200_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 400,
+      "method": "bat3r",
+      "metrics": {
+        "acc": 0.05135,
+        "comp": 0.06913,
+        "chamfer": 0.06024,
+        "nc": 0.57139
+      },
+      "sequences": 18,
+      "source_tag": "REC7_400_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 400,
+      "method": "cut3r",
+      "metrics": {
+        "acc": 0.19372,
+        "comp": 0.15493,
+        "chamfer": 0.17433,
+        "nc": 0.52714
+      },
+      "sequences": 18,
+      "source_tag": "REC7_400_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 400,
+      "method": "ttt3r",
+      "metrics": {
+        "acc": 0.07096,
+        "comp": 0.07543,
+        "chamfer": 0.0732,
+        "nc": 0.55718
+      },
+      "sequences": 18,
+      "source_tag": "REC7_400_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 50,
+      "method": "bat3r",
+      "metrics": {
+        "acc": 0.04056,
+        "comp": 0.03789,
+        "chamfer": 0.03923,
+        "nc": 0.63703
+      },
+      "sequences": 18,
+      "source_tag": "REC7_50_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 50,
+      "method": "cut3r",
+      "metrics": {
+        "acc": 0.04204,
+        "comp": 0.03841,
+        "chamfer": 0.04023,
+        "nc": 0.62405
+      },
+      "sequences": 18,
+      "source_tag": "REC7_50_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "7-Scenes",
+      "frames": 50,
+      "method": "ttt3r",
+      "metrics": {
+        "acc": 0.04167,
+        "comp": 0.0384,
+        "chamfer": 0.04004,
+        "nc": 0.63455
+      },
+      "sequences": 18,
+      "source_tag": "REC7_50_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "NRGBD",
+      "frames": 100,
+      "method": "bat3r",
+      "metrics": {
+        "acc": 0.05092,
+        "comp": 0.02029,
+        "chamfer": 0.03561,
+        "nc": 0.67117
+      },
+      "sequences": 9,
+      "source_tag": "RECN_100_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "NRGBD",
+      "frames": 100,
+      "method": "cut3r",
+      "metrics": {
+        "acc": 0.06154,
+        "comp": 0.02575,
+        "chamfer": 0.04364,
+        "nc": 0.64013
+      },
+      "sequences": 9,
+      "source_tag": "RECN_100_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "NRGBD",
+      "frames": 100,
+      "method": "ttt3r",
+      "metrics": {
+        "acc": 0.05348,
+        "comp": 0.02182,
+        "chamfer": 0.03765,
+        "nc": 0.66764
+      },
+      "sequences": 9,
+      "source_tag": "RECN_100_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "NRGBD",
+      "frames": 200,
+      "method": "bat3r",
+      "metrics": {
+        "acc": 0.10955,
+        "comp": 0.02064,
+        "chamfer": 0.0651,
+        "nc": 0.63552
+      },
+      "sequences": 9,
+      "source_tag": "RECN_200_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "NRGBD",
+      "frames": 200,
+      "method": "cut3r",
+      "metrics": {
+        "acc": 0.16511,
+        "comp": 0.06792,
+        "chamfer": 0.11651,
+        "nc": 0.59194
+      },
+      "sequences": 9,
+      "source_tag": "RECN_200_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "reconstruction",
+      "dataset": "NRGBD",
+      "frames": 200,
+      "method": "ttt3r",
+      "metrics": {
+        "acc": 0.12137,
+        "comp": 0.02524,
+        "chamfer": 0.07331,
+        "nc": 0.62479
+      },
+      "sequences": 9,
+      "source_tag": "RECN_200_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; keyframe interval 2; centre crop; scale/shift alignment; voxelization and ICP; per-scene aggregate."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 1000,
+      "method": "bat3r",
+      "metrics": {
+        "ate": 0.06142,
+        "rpe_t": 0.01683,
+        "rpe_r": 1.3602
+      },
+      "sequences": 8,
+      "source_tag": "E_len1000_bat3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 1000,
+      "method": "cut3r",
+      "metrics": {
+        "ate": 0.15271,
+        "rpe_t": 0.00748,
+        "rpe_r": 0.48465
+      },
+      "sequences": 8,
+      "source_tag": "E_len1000_cut3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 1000,
+      "method": "ttt3r",
+      "metrics": {
+        "ate": 0.11004,
+        "rpe_t": 0.00927,
+        "rpe_r": 0.42922
+      },
+      "sequences": 8,
+      "source_tag": "E_len1000_ttt3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 100,
+      "method": "bat3r",
+      "metrics": {
+        "ate": 0.01756,
+        "rpe_t": 0.00853,
+        "rpe_r": 0.29449
+      },
+      "sequences": 8,
+      "source_tag": "E_len100_bat3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 100,
+      "method": "cut3r",
+      "metrics": {
+        "ate": 0.02522,
+        "rpe_t": 0.00763,
+        "rpe_r": 0.2972
+      },
+      "sequences": 8,
+      "source_tag": "E_len100_cut3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 100,
+      "method": "ttt3r",
+      "metrics": {
+        "ate": 0.02,
+        "rpe_t": 0.00825,
+        "rpe_r": 0.29115
+      },
+      "sequences": 8,
+      "source_tag": "E_len100_ttt3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 200,
+      "method": "bat3r",
+      "metrics": {
+        "ate": 0.02351,
+        "rpe_t": 0.00921,
+        "rpe_r": 0.30738
+      },
+      "sequences": 8,
+      "source_tag": "E_len200_bat3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 200,
+      "method": "cut3r",
+      "metrics": {
+        "ate": 0.04845,
+        "rpe_t": 0.00844,
+        "rpe_r": 0.34269
+      },
+      "sequences": 8,
+      "source_tag": "E_len200_cut3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 200,
+      "method": "ttt3r",
+      "metrics": {
+        "ate": 0.03968,
+        "rpe_t": 0.00936,
+        "rpe_r": 0.32318
+      },
+      "sequences": 8,
+      "source_tag": "E_len200_ttt3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 500,
+      "method": "bat3r",
+      "metrics": {
+        "ate": 0.03297,
+        "rpe_t": 0.00952,
+        "rpe_r": 0.36406
+      },
+      "sequences": 8,
+      "source_tag": "E_len500_bat3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 500,
+      "method": "cut3r",
+      "metrics": {
+        "ate": 0.11836,
+        "rpe_t": 0.00748,
+        "rpe_r": 0.39454
+      },
+      "sequences": 8,
+      "source_tag": "E_len500_cut3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 500,
+      "method": "ttt3r",
+      "metrics": {
+        "ate": 0.06895,
+        "rpe_t": 0.00944,
+        "rpe_r": 0.34718
+      },
+      "sequences": 8,
+      "source_tag": "E_len500_ttt3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 50,
+      "method": "bat3r",
+      "metrics": {
+        "ate": 0.0137,
+        "rpe_t": 0.00767,
+        "rpe_r": 0.30156
+      },
+      "sequences": 8,
+      "source_tag": "E_len50_bat3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 50,
+      "method": "cut3r",
+      "metrics": {
+        "ate": 0.01918,
+        "rpe_t": 0.00781,
+        "rpe_r": 0.29986
+      },
+      "sequences": 8,
+      "source_tag": "E_len50_cut3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "TUM dynamics",
+      "frames": 50,
+      "method": "ttt3r",
+      "metrics": {
+        "ate": 0.01447,
+        "rpe_t": 0.00764,
+        "rpe_r": 0.29917
+      },
+      "sequences": 8,
+      "source_tag": "E_len50_ttt3r_tum",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "ScanNet",
+      "frames": 1000,
+      "method": "bat3r",
+      "metrics": {
+        "ate": 0.34166,
+        "rpe_t": 0.07734,
+        "rpe_r": 4.45417
+      },
+      "sequences": 6,
+      "source_tag": "F_scnlen1000_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "ScanNet",
+      "frames": 1000,
+      "method": "cut3r",
+      "metrics": {
+        "ate": 0.55344,
+        "rpe_t": 0.03706,
+        "rpe_r": 0.99752
+      },
+      "sequences": 6,
+      "source_tag": "F_scnlen1000_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "ScanNet",
+      "frames": 1000,
+      "method": "ttt3r",
+      "metrics": {
+        "ate": 0.32881,
+        "rpe_t": 0.04565,
+        "rpe_r": 1.16629
+      },
+      "sequences": 6,
+      "source_tag": "F_scnlen1000_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "ScanNet",
+      "frames": 200,
+      "method": "bat3r",
+      "metrics": {
+        "ate": 0.30936,
+        "rpe_t": 0.06764,
+        "rpe_r": 3.33673
+      },
+      "sequences": 9,
+      "source_tag": "F_scnlen200_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "ScanNet",
+      "frames": 200,
+      "method": "cut3r",
+      "metrics": {
+        "ate": 0.52727,
+        "rpe_t": 0.03837,
+        "rpe_r": 1.58599
+      },
+      "sequences": 9,
+      "source_tag": "F_scnlen200_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "ScanNet",
+      "frames": 200,
+      "method": "ttt3r",
+      "metrics": {
+        "ate": 0.24516,
+        "rpe_t": 0.0455,
+        "rpe_r": 0.95088
+      },
+      "sequences": 9,
+      "source_tag": "F_scnlen200_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "ScanNet",
+      "frames": 500,
+      "method": "bat3r",
+      "metrics": {
+        "ate": 0.29302,
+        "rpe_t": 0.06725,
+        "rpe_r": 3.86265
+      },
+      "sequences": 7,
+      "source_tag": "F_scnlen500_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "ScanNet",
+      "frames": 500,
+      "method": "cut3r",
+      "metrics": {
+        "ate": 0.50255,
+        "rpe_t": 0.0356,
+        "rpe_r": 1.50892
+      },
+      "sequences": 7,
+      "source_tag": "F_scnlen500_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "pose",
+      "dataset": "ScanNet",
+      "frames": 500,
+      "method": "ttt3r",
+      "metrics": {
+        "ate": 0.26892,
+        "rpe_t": 0.04195,
+        "rpe_r": 1.03705
+      },
+      "sequences": 7,
+      "source_tag": "F_scnlen500_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level pose evaluation, averaged over the available sequences."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 110,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.06649,
+        "delta125": 95.548
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_110_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 110,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.07244,
+        "delta125": 94.525
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_110_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 110,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.06877,
+        "delta125": 95.433
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_110_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 200,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.0661,
+        "delta125": 95.416
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_200_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 200,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.06875,
+        "delta125": 95.012
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_200_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 200,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.06842,
+        "delta125": 95.273
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_200_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 300,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.07635,
+        "delta125": 94.926
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_300_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 300,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.0829,
+        "delta125": 94.849
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_300_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 300,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.07929,
+        "delta125": 94.947
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_300_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 500,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.07178,
+        "delta125": 95.337
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_500_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 500,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.0817,
+        "delta125": 94.575
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_500_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 500,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.07543,
+        "delta125": 95.311
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_500_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 50,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.07675,
+        "delta125": 93.956
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_50_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 50,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.0816,
+        "delta125": 92.2
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_50_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "Bonn",
+      "frames": 50,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.0777,
+        "delta125": 95.143
+      },
+      "sequences": 5,
+      "source_tag": "DEPLEN_50_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 110,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.10774,
+        "delta125": 90.914
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_110_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 110,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.11548,
+        "delta125": 88.909
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_110_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 110,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.11379,
+        "delta125": 90.092
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_110_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 200,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.10802,
+        "delta125": 90.931
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_200_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 200,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.11329,
+        "delta125": 89.436
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_200_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 200,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.11153,
+        "delta125": 90.285
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_200_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 300,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.10988,
+        "delta125": 90.568
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_300_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 300,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.11538,
+        "delta125": 89.016
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_300_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 300,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.11347,
+        "delta125": 89.676
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_300_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 500,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.1135,
+        "delta125": 89.932
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_500_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 500,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.11863,
+        "delta125": 88.53
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_500_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 500,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.11587,
+        "delta125": 89.373
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_500_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 50,
+      "method": "bat3r",
+      "metrics": {
+        "abs_rel": 0.10419,
+        "delta125": 91.484
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_50_bat3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 50,
+      "method": "cut3r",
+      "metrics": {
+        "abs_rel": 0.11006,
+        "delta125": 90.624
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_50_cut3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "depth",
+      "dataset": "KITTI",
+      "frames": 50,
+      "method": "ttt3r",
+      "metrics": {
+        "abs_rel": 0.1065,
+        "delta125": 91.017
+      },
+      "sequences": 13,
+      "source_tag": "KITLEN_50_ttt3r",
+      "seed": 0,
+      "protocol": "Saved seed-0 run; sequence-level aggregation under the recorded dataset alignment protocol."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 50,
+      "method": "cut3r_sdpa",
+      "metrics": {
+        "fps": 19.096,
+        "peak_alloc_gb": 3.411
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 50,
+      "method": "cut3r_attention",
+      "metrics": {
+        "fps": 18.889,
+        "peak_alloc_gb": 6.137
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 50,
+      "method": "ttt3r",
+      "metrics": {
+        "fps": 18.434,
+        "peak_alloc_gb": 6.143
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 50,
+      "method": "bat3r",
+      "metrics": {
+        "fps": 18.085,
+        "peak_alloc_gb": 6.15
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 100,
+      "method": "cut3r_sdpa",
+      "metrics": {
+        "fps": 19.235,
+        "peak_alloc_gb": 3.411
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 100,
+      "method": "cut3r_attention",
+      "metrics": {
+        "fps": 18.732,
+        "peak_alloc_gb": 6.138
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 100,
+      "method": "ttt3r",
+      "metrics": {
+        "fps": 18.285,
+        "peak_alloc_gb": 6.143
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 100,
+      "method": "bat3r",
+      "metrics": {
+        "fps": 18.056,
+        "peak_alloc_gb": 6.15
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 200,
+      "method": "cut3r_sdpa",
+      "metrics": {
+        "fps": 19.22,
+        "peak_alloc_gb": 3.412
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 200,
+      "method": "cut3r_attention",
+      "metrics": {
+        "fps": 18.869,
+        "peak_alloc_gb": 6.138
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 200,
+      "method": "ttt3r",
+      "metrics": {
+        "fps": 18.427,
+        "peak_alloc_gb": 6.143
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 200,
+      "method": "bat3r",
+      "metrics": {
+        "fps": 18.193,
+        "peak_alloc_gb": 6.15
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 300,
+      "method": "cut3r_sdpa",
+      "metrics": {
+        "fps": 19.261,
+        "peak_alloc_gb": 3.412
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 300,
+      "method": "cut3r_attention",
+      "metrics": {
+        "fps": 18.836,
+        "peak_alloc_gb": 6.138
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 300,
+      "method": "ttt3r",
+      "metrics": {
+        "fps": 18.384,
+        "peak_alloc_gb": 6.144
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 300,
+      "method": "bat3r",
+      "metrics": {
+        "fps": 18.153,
+        "peak_alloc_gb": 6.15
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 500,
+      "method": "cut3r_sdpa",
+      "metrics": {
+        "fps": 19.274,
+        "peak_alloc_gb": 3.412
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 500,
+      "method": "cut3r_attention",
+      "metrics": {
+        "fps": 18.831,
+        "peak_alloc_gb": 6.139
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 500,
+      "method": "ttt3r",
+      "metrics": {
+        "fps": 18.418,
+        "peak_alloc_gb": 6.144
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 500,
+      "method": "bat3r",
+      "metrics": {
+        "fps": 18.148,
+        "peak_alloc_gb": 6.15
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 1000,
+      "method": "cut3r_sdpa",
+      "metrics": {
+        "fps": 19.217,
+        "peak_alloc_gb": 3.413
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 1000,
+      "method": "cut3r_attention",
+      "metrics": {
+        "fps": 18.871,
+        "peak_alloc_gb": 6.14
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 1000,
+      "method": "ttt3r",
+      "metrics": {
+        "fps": 18.448,
+        "peak_alloc_gb": 6.144
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    },
+    {
+      "task": "efficiency",
+      "dataset": "Saved timing run",
+      "frames": 1000,
+      "method": "bat3r",
+      "metrics": {
+        "fps": 18.13,
+        "peak_alloc_gb": 6.15
+      },
+      "sequences": null,
+      "protocol": "Recorded synthetic-length timing experiment; allocated GPU memory and wall-clock FPS. Hardware and attention implementation affect these measurements."
+    }
+  ]
+}

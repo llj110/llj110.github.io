@@ -1,0 +1,19 @@
+- name: National Natural Science Foundation of China
+  name_zh: 国家自然科学基金
+  grants: ['62436006', '62192730', '62192731']
+  role: Participant
+  role_zh: 项目参与人
+- name: National Key Research and Development Program of China
+  name_zh: 国家重点研发计划
+  grants: ['2023YFC3502900']
+  role: Participant
+  role_zh: 项目参与人
+- name: Science and Technology Development Fund, Macau SAR
+  name_zh: 澳门特别行政区科学技术发展基金
+  grants: ['0141/2023/RIA2', '0193/2023/RIA3']
+  role: Participant
+  role_zh: 项目参与人
+- name: College Student Innovation and Entrepreneurship Training Program, Chongqing
+  name_zh: 重庆市大学生创新创业训练计划项目
+  role: Project Lead
+  role_zh: 项目负责人
