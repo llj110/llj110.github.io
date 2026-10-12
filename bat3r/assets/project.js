@@ -19,7 +19,7 @@ const inputImageCache = new Map();
 let visible = true, playing = false, previousTick = 0, resultData = [], resultTask = 'reconstruction';
 
 async function json(path) {
-  const response = await fetch(new URL(path, base));
+  const response = await fetch(new URL(path, base), {cache:'no-cache'});
   if (!response.ok) throw new Error(`Scene data unavailable (${response.status})`);
   return response.json();
 }
