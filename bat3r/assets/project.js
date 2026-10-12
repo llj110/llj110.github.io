@@ -6,6 +6,12 @@ const base = new URL('./data/', import.meta.url);
 const tr = (en, zh) => document.documentElement.lang === 'zh-CN' ? zh : en;
 const names = {bat3r:'BAT3R',cut3r:'CUT3R reference',ground_truth:'Ground-truth geometry',ttt3r:'Attention-gate reference',cut3r_sdpa:'CUT3R · fused attention',cut3r_attention:'CUT3R · attention readout'};
 const cache = new Map();
+// README links can open a focused, automatically rotating scene.
+const viewOptions = new URL(location.href).searchParams;
+$('auto-rotate').checked = viewOptions.get('rotate') !== '0';
+if (['cut3r', 'ground_truth', 'none'].includes(viewOptions.get('compare'))) {
+  $('compare-select').value = viewOptions.get('compare');
+}
 let gallery = [], meta, viewers = [], generation = 0, syncing = false, selectedFilter = 'all', allScenes = false;
 let referenceGeneration = 0;
 let visible = true, playing = false, previousTick = 0, resultData = [], resultTask = 'reconstruction';
