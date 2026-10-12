@@ -2,7 +2,7 @@
 
 Public route: https://llj110.github.io/bat3r/
 
-This static project page is built with the existing GitHub Pages Jekyll site. It includes a concise bilingual abstract based on the author manuscript, the paper's method diagram, six original performance figures, nine original qualitative comparison images, and 149 table rows transcribed from Tables 1–4. It also has an interactive point-cloud comparison of 27 separately preserved server scenes, input ground-truth camera paths, paired RGB keyframes, paper resources, and citation copying. Inference is not executed on the website.
+This static project page is built with the existing GitHub Pages Jekyll site. It includes the complete English abstract verbatim from the author manuscript and a full Chinese translation, the paper's method diagram, six original performance figures, nine original qualitative comparison images, and 149 table rows transcribed from Tables 1–4. It also has an interactive point-cloud comparison of 27 separately preserved server scenes, input ground-truth camera paths, paired RGB keyframes, paper resources, and citation copying. Inference is not executed on the website.
 
 ## Data contract
 
