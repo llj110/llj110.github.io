@@ -18,7 +18,7 @@ Original server files are preserved. Public assets contain neither server creden
 
 ## Implementation
 
-`assets/project.js` handles scene selection, camera linking, orbit controls, RGB / height coloring, camera-path playback, preview PLY exports, searchable gallery, results selectors, and citation copying. It gracefully retains a static preview when WebGL is unavailable. Three.js 0.180.0 is vendored under `assets/vendor` with `THREE-LICENSE.txt`.
+`assets/project.js` handles scene selection, camera linking, orbit controls, RGB / height coloring, camera-path playback, preview PLY exports, searchable gallery, results selectors, and citation copying. It gracefully retains a static preview when WebGL is unavailable. Three.js 0.180.0 is vendored under `assets/lib` with `THREE-LICENSE.txt`.
 
 The owner explicitly authorized a public implementation release. The project page links directly to https://github.com/llj110/BAT3R. The demo is public, with no login or code-application gate.
 

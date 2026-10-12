@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { OrbitControls } from './vendor/OrbitControls.js';
+import { OrbitControls } from './lib/OrbitControls.js';
 
 const $ = (id) => document.getElementById(id);
 const base = new URL('./data/', import.meta.url);

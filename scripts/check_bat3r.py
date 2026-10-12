@@ -1,12 +1,13 @@
 """Validate exported scene integrity, privacy, and generated project-page links."""
 from pathlib import Path
-import hashlib, json
+import hashlib, json, subprocess, sys
 import numpy as np
 import yaml
 from bs4 import BeautifulSoup
 from urllib.parse import urlsplit, unquote
 
 ROOT=Path(__file__).resolve().parents[1]
+SITE=Path(sys.argv[1]) if len(sys.argv)>1 else ROOT/'_site'
 DATA=ROOT/'bat3r/assets/data'
 gallery=json.loads((DATA/'gallery.json').read_text(encoding='utf-8'))['scenes']
 assert len(gallery)==27 and len({x['id'] for x in gallery})==27
@@ -40,15 +41,23 @@ for p in DATA.rglob('*.json'):
     text=p.read_text(encoding='utf-8')
     assert '/home/' not in text and 'password' not in text and 'private_key' not in text
 
-page=ROOT/'_site/bat3r/index.html'
+page=SITE/'bat3r/index.html'
 soup=BeautifulSoup(page.read_text(encoding='utf-8'),'html.parser')
+runtime_files=['three.module.js','three.core.js','OrbitControls.js','THREE-LICENSE.txt']
+tracked=set(subprocess.check_output(['git','ls-files'],cwd=ROOT,text=True).splitlines())
+for name in runtime_files:
+    path='bat3r/assets/lib/'+name
+    assert path in tracked, f'Runtime dependency is not tracked: {path}'
+    assert (SITE/path).read_bytes()==(ROOT/path).read_bytes(), path
+import_map=json.loads(soup.select_one('script[type="importmap"]').string)
+assert import_map['imports']['three']=='/bat3r/assets/lib/three.module.js'
 ids=[x['id'] for x in soup.select('[id]')]; assert len(ids)==len(set(ids))
 assert soup.select_one('#code-resource')['href']=='https://github.com/llj110/BAT3R'
 assert not soup.select('a[href^="mailto:"]')
 for tag in soup.select('a[href],link[href],script[src],img[src]'):
     url=tag.get('src') or tag.get('href'); parts=urlsplit(url)
     if parts.scheme or parts.netloc:continue
-    target=(ROOT/'_site'/unquote(parts.path).lstrip('/')) if parts.path.startswith('/') else (page.parent/unquote(parts.path))
+    target=(SITE/unquote(parts.path).lstrip('/')) if parts.path.startswith('/') else (page.parent/unquote(parts.path))
     if not parts.path:target=page
     if target.is_dir():target=target/'index.html'
     assert target.is_file(),url
@@ -58,7 +67,7 @@ for tag in soup.select('a[href],link[href],script[src],img[src]'):
 projects=yaml.safe_load((ROOT/'_data/research_projects.yml').read_text(encoding='utf-8'))
 assert sum(len(x.get('grants',[])) for x in projects)==6
 assert sum(x['role']=='Project Lead' for x in projects)==1
-home=BeautifulSoup((ROOT/'_site/index.html').read_text(encoding='utf-8'),'html.parser')
+home=BeautifulSoup((SITE/'index.html').read_text(encoding='utf-8'),'html.parser')
 assert home.select_one('#research-projects') and len(home.select('.funding-card li'))==6
 assert home.select_one('a[href="/bat3r/"]')
 print(f'PASS: {len(gallery)} real scenes, {clouds} point clouds, 96 saved result rows, verified payloads and links, 7 research projects; no private paths in exported JSON.')
