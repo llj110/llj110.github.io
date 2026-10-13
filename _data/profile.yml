@@ -13,8 +13,8 @@ short_bio: I am a Ph.D. student at the Faculty of Science and Technology, Univer
   Chi-Man Pun. I received my B.S. in Software Engineering from Southwest University in 2023. My research interests
   include multimodal learning, generative AI, trustworthy machine learning, and semi-supervised learning.
 show_portrait: true
-portrait_url: assets/images/photos/llj.jpg
-portrait_caption: Photo taken in 2023
+portrait_url: assets/images/photos/lijian-li-portrait.png
+portrait_caption: Portrait of Lijian Li
 education:
 - name: University of Macau
   logo: assets/images/badges/macao.png
