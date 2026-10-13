@@ -75,7 +75,7 @@ h3 { color:var(--ink); }
 .featured-project h2 { font-size:27px; margin:0 0 6px; }
 .featured-project .section-kicker { font-size:9px; margin-bottom:6px; }
 .featured-project p:not(.section-kicker) { font-size:12px; color:var(--muted); margin:0; }
-.updates-grid { display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); gap:65px; border-bottom:1px solid var(--line); }
+.updates-grid { display:grid; grid-template-columns:minmax(0,1.6fr) minmax(0,1fr); gap:65px; align-items:start; border-bottom:1px solid var(--line); }
 .updates-grid .section { border:0; padding:44px 0; }
 .updates-grid h2 { font-size:32px; }
 .news-list { list-style:none; margin:0; padding:0; }

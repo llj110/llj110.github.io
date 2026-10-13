@@ -7,13 +7,11 @@
   {% if entries.size > 0 %}
   <div class="service-group">
     <h3 class="service-summary-title">{% if group == 1 %}<span data-lang="en">Journals</span><span data-lang="zh" lang="zh-CN">期刊</span>{% else %}<span data-lang="en">Conferences</span><span data-lang="zh" lang="zh-CN">会议</span>{% endif %}<span class="service-count">{{ entries.size }}</span></h3>
-    <ul class="service-highlight-list">{% for entry in entries limit:3 %}{% assign venue = site.data.venues[entry.venue] %}<li><div><a class="service-name" href="{{ venue.url }}" title="{{ venue.name | escape }}" aria-label="{{ venue.name | escape }}" target="_blank" rel="noopener noreferrer">{{ entry.venue }}</a>{% include rank.html venue=entry.venue %}</div></li>{% endfor %}</ul>
-    {% if entries.size > 3 %}
-    <details class="service-details">
-      <summary><span class="service-toggle"><span class="service-show"><span data-lang="en">View {{ entries.size | minus: 3 }} more</span><span data-lang="zh" lang="zh-CN">查看其余 {{ entries.size | minus: 3 }} 个</span></span><span class="service-hide"><span data-lang="en">Show less</span><span data-lang="zh" lang="zh-CN">收起</span></span><span class="service-chevron" aria-hidden="true">⌄</span></span></summary>
-      <ul>{% for entry in entries offset:3 %}{% assign venue = site.data.venues[entry.venue] %}<li><div><a class="service-name" href="{{ venue.url }}" target="_blank" rel="noopener noreferrer">{{ entry.venue }}</a>{% include rank.html venue=entry.venue %}</div><p>{{ venue.name }}</p>{% if entry.years %}<span class="service-years">{{ entry.years }}</span>{% endif %}</li>{% endfor %}</ul>
+    <ul class="service-highlight-list service-visible-list">{% for entry in entries %}{% assign venue = site.data.venues[entry.venue] %}<li><div><a class="service-name" href="{{ venue.url }}" title="{{ venue.name | escape }}" aria-label="{{ venue.name | escape }}" target="_blank" rel="noopener noreferrer">{{ entry.venue }}</a>{% include rank.html venue=entry.venue %}</div></li>{% endfor %}</ul>
+    <details class="service-details" hidden>
+      <summary><span class="service-toggle"><span class="service-show"><span data-lang="en">View <span class="service-more-count">0</span> more</span><span data-lang="zh" lang="zh-CN">查看其余 <span class="service-more-count">0</span> 个</span></span><span class="service-hide"><span data-lang="en">Show less</span><span data-lang="zh" lang="zh-CN">收起</span></span><span class="service-chevron" aria-hidden="true">⌄</span></span></summary>
+      <ul class="service-highlight-list service-overflow-list"></ul>
     </details>
-    {% endif %}
   </div>
   {% endif %}{% endfor %}
 </section>
