@@ -10,6 +10,11 @@
     <p class="authors">{% include widgets/author_list.html authors=paper.authors %}</p>
     <p class="publication-venue">{{ paper.pub }} · {{ paper.pub_date }}</p>
     {% if paper.summary %}<p class="publication-summary">{{ paper.summary | escape }}</p>{% endif %}
-    <div class="paper-links">{% for link in paper.links %}{% if link[1] and link[1] != '' %}{% if link[1].url %}<a href="{{ link[1].url }}" target="_blank" rel="noopener noreferrer">{{ link[0] }} <span aria-hidden="true">↗</span></a>{% else %}<a href="{{ link[1] }}" target="_blank" rel="noopener noreferrer">{{ link[0] }} <span aria-hidden="true">↗</span></a>{% endif %}{% endif %}{% endfor %}</div>
+    <div class="paper-links">
+      {% for link in paper.links %}{% if link[1] and link[1] != '' %}
+      {% assign link_url = link[1].url | default: link[1] %}
+      <a class="paper-link paper-link-{{ link[0] | slugify }}" href="{{ link_url }}" target="_blank" rel="noopener noreferrer">{% include widgets/paper_link_icon.html type=link[0] %}<span>{{ link[0] }}</span></a>
+      {% endif %}{% endfor %}
+    </div>
   </div>
 </article>
