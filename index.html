@@ -5,22 +5,24 @@ navbar_name: Home
 ---
 <section class="hero" id="about" aria-labelledby="about-title">
   <div class="hero-copy">
-  <p class="eyebrow"><span data-lang="en">MULTIMODAL LEARNING · ROBUST VISUAL PERCEPTION</span><span data-lang="zh" lang="zh-CN">多模态学习 · 鲁棒视觉感知</span></p>
+  <p class="eyebrow"><span class="accent-rule" aria-hidden="true"></span><span data-lang="en">UNIVERSITY OF MACAU · MULTIMODAL LEARNING</span><span data-lang="zh" lang="zh-CN">澳门大学 · 多模态学习</span></p>
   <h1 class="hero-name">Lijian Li<span aria-hidden="true">.</span></h1>
   <p class="hero-role"><span class="role-dot" aria-hidden="true"></span><span data-lang="en">Ph.D. student · University of Macau</span><span data-lang="zh" lang="zh-CN">博士研究生 · 澳门大学</span></p>
   <h2 id="about-title" class="sr-only"><span data-lang="en">About me</span><span data-lang="zh" lang="zh-CN">关于我</span></h2>
   <div class="about-copy" data-lang="en">
+    <p class="research-lead">I study <strong>multimodal learning</strong> and <strong>robust visual perception</strong>, with a focus on uncertainty modeling, semi-supervised learning, and test-time adaptation.</p>
     <p>I am a <strong>Ph.D. student</strong> at the <a href="https://www.fst.um.edu.mo/" target="_blank" rel="noopener noreferrer">Faculty of Science and Technology, University of Macau</a>, supervised by <a href="https://cmpun.github.io/" target="_blank" rel="noopener noreferrer">Prof. Chi-Man Pun</a>. I received my B.S. in Software Engineering from Southwest University in 2023.</p>
-    <p>My research focuses on <strong>multimodal learning and robust visual perception</strong>, with an emphasis on <strong>uncertainty modeling, semi-supervised learning, and test-time adaptation</strong>. I study how to combine complementary information and adapt models when labels are scarce or data distributions change. My recent work spans online 3D reconstruction, cross-modal retrieval, medical image segmentation, and multimodal knowledge graph completion.</p>
+    <p>I study how to combine complementary information and adapt models when labels are scarce or data distributions change. My recent work spans online 3D reconstruction, cross-modal retrieval, medical image segmentation, and multimodal knowledge graph completion.</p>
   </div>
   <div class="about-copy" data-lang="zh" lang="zh-CN">
+    <p class="research-lead">我的研究聚焦于<strong>多模态学习与鲁棒视觉感知</strong>，重点探索不确定性建模、半监督学习和测试时适应。</p>
     <p>我目前在<strong>澳门大学科技学院攻读博士学位</strong>，导师为 <a href="https://cmpun.github.io/" target="_blank" rel="noopener noreferrer">Chi-Man Pun 教授</a>。2023 年，我于西南大学获得软件工程学士学位。</p>
-    <p>我的研究聚焦于<strong>多模态学习与鲁棒视觉感知</strong>，重点探索<strong>不确定性建模、半监督学习和测试时适应</strong>。我关注如何融合互补信息，并在标注有限或数据分布变化时提升模型的可靠性与适应能力。近期工作涵盖在线三维重建、跨模态检索、医学图像分割和多模态知识图谱补全。</p>
+    <p>我关注如何融合互补信息，并在标注有限或数据分布变化时提升模型的可靠性与适应能力。近期工作涵盖在线三维重建、跨模态检索、医学图像分割和多模态知识图谱补全。</p>
   </div>
   <ul class="research-tags" aria-label="Research interests">
     <li>Multimodal Learning</li><li>Uncertainty Modeling</li><li>Test-Time Adaptation</li><li>3D Vision</li>
   </ul>
-  <div class="hero-social"><a href="https://scholar.google.com/citations?user=Pe_tlDMAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://dblp.org/pid/88/1835-3" target="_blank" rel="noopener noreferrer">DBLP <span aria-hidden="true">↗</span></a><a href="https://github.com/llj110" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://orcid.org/0009-0006-2009-3269" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a></div>
+  <div class="hero-social"><a class="contact-button" href="mailto:{{ site.data.profile.email }}"><span data-lang="en">Get in touch</span><span data-lang="zh">联系我</span><span aria-hidden="true">↗</span></a><a href="https://scholar.google.com/citations?user=Pe_tlDMAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://dblp.org/pid/88/1835-3" target="_blank" rel="noopener noreferrer">DBLP <span aria-hidden="true">↗</span></a><a href="https://github.com/llj110" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://orcid.org/0009-0006-2009-3269" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a></div>
   </div>
   {% include profile.html %}
 </section>
@@ -36,7 +38,8 @@ navbar_name: Home
 <section class="section" id="publications" aria-labelledby="publications-title">
   <div class="section-heading"><div><p class="section-kicker">03 / RESEARCH</p><h2 id="publications-title"><span data-lang="en">Selected publications</span><span data-lang="zh" lang="zh-CN">代表性论文</span></h2></div><a class="text-link" href="{{ '/publications.html' | relative_url }}"><span data-lang="en">All publications</span><span data-lang="zh" lang="zh-CN">全部论文</span> <span aria-hidden="true">→</span></a></div>
   {% assign pubs = site.publications | where: 'selected', true | sort: 'date' | reverse %}
-  <div class="publication-list">{% for item in pubs %}{% include widgets/publication_item.html item=item %}{% endfor %}</div>
+  <div class="selected-publication-grid">{% for item in pubs limit:3 %}{% include widgets/publication_item.html item=item featured=true %}{% endfor %}</div>
+  <div class="publication-list selected-publication-list">{% for item in pubs offset:3 %}{% include widgets/publication_item.html item=item %}{% endfor %}</div>
 </section>
 {% include research_projects.html %}
 <section class="section" id="education" aria-labelledby="education-title">
@@ -47,3 +50,4 @@ navbar_name: Home
     <article class="experience-item"><img src="{{ '/assets/images/badges/gm.jpg' | relative_url }}" alt="" width="48" height="48" loading="lazy"><div><h3><span data-lang="en">Guangming Laboratory</span><span data-lang="zh" lang="zh-CN">光明实验室</span></h3><p><span data-lang="en">Research Intern</span><span data-lang="zh" lang="zh-CN">科研实习</span></p></div><span class="experience-date">2024 – <span data-lang="en">Present</span><span data-lang="zh" lang="zh-CN">至今</span></span></article>
   </div>
 </section>
+<section class="contact-section" id="contact" aria-labelledby="contact-title"><div><p class="section-kicker">06 / CONTACT</p><h2 id="contact-title"><span data-lang="en">Let's connect.</span><span data-lang="zh">欢迎交流。</span></h2><a class="contact-email" href="mailto:{{ site.data.profile.email }}">{{ site.data.profile.email }} <span aria-hidden="true">↗</span></a></div><p><span data-lang="en">Faculty of Science and Technology<br>University of Macau · Macau, China</span><span data-lang="zh">澳门大学科技学院<br>中国 · 澳门</span></p></section>

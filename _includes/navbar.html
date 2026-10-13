@@ -1,14 +1,13 @@
 <header class="site-header">
   <nav class="header-inner" aria-label="Main navigation">
-    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark" aria-hidden="true">LL</span>{{ site.data.profile.primary_name }}</a>
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.data.profile.primary_name }} · Home">LL<span aria-hidden="true">.</span></a>
     <div class="nav-links">
       <a href="{{ '/' | relative_url }}#about"><span data-lang="en">About</span><span data-lang="zh" lang="zh-CN">关于我</span></a>
-      <a href="{{ '/' | relative_url }}#news"><span data-lang="en">News</span><span data-lang="zh" lang="zh-CN">动态</span></a>
       <a href="{{ '/' | relative_url }}#service"><span data-lang="en">Service</span><span data-lang="zh" lang="zh-CN">审稿</span></a>
       <a href="{{ '/publications.html' | relative_url }}" {% if page.navbar_name == 'Publications' %}aria-current="page"{% endif %}><span data-lang="en">Publications</span><span data-lang="zh" lang="zh-CN">论文</span></a>
       <a href="{{ '/' | relative_url }}#research-projects"><span data-lang="en">Projects</span><span data-lang="zh" lang="zh-CN">科研项目</span></a>
       <a href="{{ '/' | relative_url }}#education"><span data-lang="en">Education</span><span data-lang="zh" lang="zh-CN">教育经历</span></a>
-      <button class="language-toggle" type="button" aria-label="Switch to Chinese" hidden>中文</button>
     </div>
+    <div class="header-actions"><button class="language-toggle" type="button" aria-label="Switch to Chinese" hidden>中文</button><details class="mobile-menu"><summary><span data-lang="en">Menu</span><span data-lang="zh">菜单</span><span aria-hidden="true">＋</span></summary><div class="mobile-nav"><a href="{{ '/' | relative_url }}#about"><span data-lang="en">About</span><span data-lang="zh">关于我</span></a><a href="{{ '/' | relative_url }}#publications"><span data-lang="en">Research</span><span data-lang="zh">代表性论文</span></a><a href="{{ '/publications.html' | relative_url }}"><span data-lang="en">All publications</span><span data-lang="zh">全部论文</span></a><a href="{{ '/' | relative_url }}#service"><span data-lang="en">Service</span><span data-lang="zh">学术审稿</span></a><a href="{{ '/' | relative_url }}#research-projects"><span data-lang="en">Projects</span><span data-lang="zh">科研项目</span></a><a href="{{ '/' | relative_url }}#education"><span data-lang="en">Experience</span><span data-lang="zh">教育与经历</span></a><a href="{{ '/' | relative_url }}#contact"><span data-lang="en">Contact</span><span data-lang="zh">联系我</span></a></div></details></div>
   </nav>
 </header>

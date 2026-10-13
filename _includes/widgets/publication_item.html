@@ -1,5 +1,5 @@
 {% assign paper = include.item %}
-<article class="publication" data-search="{{ paper.title | append: ' ' | append: paper.authors | append: ' ' | append: paper.pub | append: ' ' | append: paper.venue_short | append: ' ' | append: paper.pub_date | downcase | escape }}">
+<article class="publication{% if include.featured %} publication-featured{% endif %}" data-search="{{ paper.title | append: ' ' | append: paper.authors | append: ' ' | append: paper.pub | append: ' ' | append: paper.venue_short | append: ' ' | append: paper.pub_date | downcase | escape }}">
   <div class="publication-visual">
     {% if paper.cover and paper.cover != '' %}<img src="{{ paper.cover | relative_url }}" alt="{{ paper.title | escape }} — overview figure" loading="lazy" width="520" height="330">
     {% else %}<div class="publication-placeholder" aria-hidden="true"><span>{{ paper.venue_short | default: paper.pub }}</span><span>{{ paper.pub_date }}</span></div>{% endif %}
