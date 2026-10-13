@@ -93,13 +93,13 @@ h3 { color:var(--ink); }
 .rank-b { background:#f0f0e9; border-color:#dedfd4; color:#64715b; }
 .rank-c { background:#f0f0ed; border-color:#e0e1da; color:#70756a; }
 .service-intro { font-size:12px; color:var(--muted); margin:0 0 18px; }
-.service-details { border-top:1px solid var(--line); }
-.service-details summary { list-style:none; cursor:pointer; position:relative; padding:15px 70px 15px 0; }
+.service-group { border-top:1px solid var(--line); padding-top:14px; }
+.service-group+.service-group { margin-top:18px; }
+.service-details summary { list-style:none; cursor:pointer; padding:10px 0 2px; }
 .service-details summary::-webkit-details-marker { display:none; }
-.service-summary-title { display:flex; align-items:center; gap:8px; font-size:13px; font-weight:500; color:var(--ink); }
+.service-summary-title { display:flex; align-items:center; gap:8px; margin:0 0 12px; font-size:13px; font-weight:500; color:var(--ink); }
 .service-count { min-width:22px; padding:0 5px; border-radius:3px; background:#f0e5e8; color:var(--accent); font-size:10px; text-align:center; }
-.service-preview { display:block; margin-top:5px; color:var(--muted); font-size:11px; line-height:1.7; }
-.service-toggle { position:absolute; top:16px; right:0; display:flex; align-items:center; gap:6px; font-size:11px; color:var(--accent); }
+.service-toggle { display:inline-flex; align-items:center; gap:8px; font-size:11px; color:var(--accent); }
 .service-chevron { font-size:15px; line-height:1; }
 .service-hide { display:none; }
 .service-details[open] .service-show { display:none; }
@@ -111,6 +111,11 @@ h3 { color:var(--ink); }
 .service-name { font-size:14px; color:var(--ink); font-weight:500; }
 .service-group li p { color:var(--muted); font-size:11px; line-height:1.7; margin:5px 0 0; }
 .service-years { font-size:10px; color:var(--muted); }
+.service-group .service-highlight-list { display:flex; flex-wrap:wrap; gap:8px; }
+.service-group .service-highlight-list li { border:1px solid #e4ddd9; border-radius:5px; padding:7px 9px; background:rgba(255,255,255,.7); }
+.service-highlight-list li>div { gap:7px; }
+.service-highlight-list .service-name { font-size:13px; font-weight:600; }
+.service-details[open] summary { padding-bottom:10px; }
 .publication-list { padding:0; }
 .publication { display:grid; grid-template-columns:minmax(0,1fr) 170px; gap:28px; padding:26px 0; border-bottom:1px solid var(--line); }
 .publication:last-child { border-bottom:0; }
