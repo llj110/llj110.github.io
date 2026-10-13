@@ -62,3 +62,57 @@ IJCNN:
   grade: C
   type: Conference
   source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+AAAI:
+  name: AAAI Conference on Artificial Intelligence
+  grade: A
+  type: Conference
+  url: https://aaai.org/
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+CVPR:
+  name: IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  grade: A
+  type: Conference
+  url: https://cvpr.thecvf.com/
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+ICCV:
+  name: International Conference on Computer Vision
+  grade: A
+  type: Conference
+  url: https://iccv.thecvf.com/
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+ACM MM:
+  name: ACM International Conference on Multimedia
+  grade: A
+  type: Conference
+  url: https://dl.acm.org/conference/mm/
+  source: https://www.ccf.org.cn/Academic_Evaluation/CGAndMT/
+AIJ:
+  name: Artificial Intelligence
+  grade: A
+  type: Journal
+  url: https://www.sciencedirect.com/journal/artificial-intelligence
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+TCSVT:
+  name: IEEE Transactions on Circuits and Systems for Video Technology
+  grade: B
+  type: Journal
+  url: https://ieee-cas.org/publication/tcsvt
+  source: https://www.ccf.org.cn/Academic_Evaluation/CGAndMT/
+TFS:
+  name: IEEE Transactions on Fuzzy Systems
+  grade: B
+  type: Journal
+  url: https://cis.ieee.org/publications/t-fuzzy-systems
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+TCYB:
+  name: IEEE Transactions on Cybernetics
+  grade: B
+  type: Journal
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036
+  source: https://www.ccf.org.cn/Academic_Evaluation/AI/
+INS:
+  name: Information Sciences
+  grade: B
+  type: Journal
+  url: https://www.sciencedirect.com/journal/information-sciences
+  source: https://www.ccf.org.cn/Academic_Evaluation/DM_CS/

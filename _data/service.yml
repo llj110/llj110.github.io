@@ -1,7 +1,32 @@
-# Confirmed directly by the owner. Add email-verified roles only after checking the invitation/acceptance status.
-- venue: PR
+# Reviewer venues confirmed directly by the owner on 14 October 2026.
+# Years, review counts, editorial roles, and committee roles are not inferred.
+- venue: TPAMI
+  type: Journal
+- venue: AIJ
+  type: Journal
+- venue: TCSVT
   type: Journal
 - venue: TNNLS
   type: Journal
+- venue: TFS
+  type: Journal
+- venue: TCYB
+  type: Journal
+- venue: PR
+  type: Journal
+- venue: INS
+  type: Journal
+- venue: NeurIPS
+  type: Conference
 - venue: KDD
+  type: Conference
+- venue: ACL
+  type: Conference
+- venue: AAAI
+  type: Conference
+- venue: CVPR
+  type: Conference
+- venue: ICCV
+  type: Conference
+- venue: ACM MM
   type: Conference
